@@ -8,21 +8,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>AlphaSnow</title>
-        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <title><?=$title?></title>
+        <link href="content/css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="content/css/style.css" rel='stylesheet' type='text/css' />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- FAVICON -->
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="content/images/favicon.png" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <script src="js/jquery.min.js"></script>
+        <script src="content/js/jquery.min.js"></script>
         <!--<script src="js/jquery.easydropdown.js"></script>-->
         <!--start slider -->
-        <link rel="stylesheet" href="css/fwslider.css" media="all">
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/fwslider.js"></script>
+        <link rel="stylesheet" href="content/css/fwslider.css" media="all">
+        <script src="content/js/jquery-ui.min.js"></script>
+        <script src="content/js/fwslider.js"></script>
         <!--end slider -->
         <script type="text/javascript">
             $(document).ready(function() {
@@ -63,20 +63,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="col-md-12">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                                <a href="index.html"><img src="content/images/logo.png" alt=""/></a>
                             </div>
                             <div class="menu">
-                                <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                                <a class="toggleMenu" href="#"><img src="content/images/nav.png" alt="" /></a>
                                 <ul class="nav" id="nav">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="experiance.html">Events</a></li>
-                                    <li><a href="experiance.html">Experiance</a></li>
-                                    <li><a href="shop.html">Company</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="shop.php">Shop</a></li>
+                                    <li><a href="team.php">Team</a></li>
+                                    <li><a href="experiance.php">Events</a></li>
+                                    <li><a href="experiance.php">Experiance</a></li>
+                                    <li><a href="shop.php">Company</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                     <div class="clear"></div>
                                 </ul>
-                                <script type="text/javascript" src="js/responsive-nav.js"></script>
+                                <script type="text/javascript" src="content/js/responsive-nav.js"></script>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -92,8 +92,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                             </div>
                             <!----search-scripts---->
-                            <script src="js/classie.js"></script>
-                            <script src="js/uisearch.js"></script>
+                            <script src="content/js/classie.js"></script>
+                            <script src="content/js/uisearch.js"></script>
                             <script>
                                 new UISearch( document.getElementById( 'sb-search' ) );
                             </script>
@@ -102,16 +102,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li><a class="active-icon c1" href="#"> </a>
                                     <ul class="sub-icon1 list">
                                         <div class="product_control_buttons">
-                                            <a href="#"><img src="images/edit.png" alt=""/></a>
-                                            <a href="#"><img src="images/close_edit.png" alt=""/></a>
+                                            <a href="#"><img src="content/images/edit.png" alt=""/></a>
+                                            <a href="#"><img src="content/images/close_edit.png" alt=""/></a>
                                         </div>
                                         <div class="clear"></div>
-                                        <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+                                        <li class="list_img"><img src="content/images/1.jpg" alt=""/></li>
                                         <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
                                   $12.00</span></li>
                                         <div class="login_buttons">
-                                            <div class="check_button"><a href="checkout.html">Check out</a></div>
-                                            <div class="login_button"><a href="login.html">Login</a></div>
+                                            <div class="check_button"><a href="checkout.php">Check out</a></div>
+                                            <div class="login_button"><a href="login.php">Login</a></div>
                                             <div class="clear"></div>
                                         </div>
                                         <div class="clear"></div>
@@ -125,7 +125,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
 
-        <?php $content = ‘.php’ ?>
+        <?=$content?>
 
         <div class="footer">
             <div class="container">
@@ -185,12 +185,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <dt><a href="#"><span>Change Region</span></a></dt>
                         <dd>
                             <ul>
-                                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
-                                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
-                                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
-                                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
-                                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
-                                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+                                <li><a href="#">Australia<img class="flag" src="content/images/as.png" alt="" /><span class="value">AS</span></a></li>
+                                <li><a href="#">Sri Lanka<img class="flag" src="content/images/srl.png" alt="" /><span class="value">SL</span></a></li>
+                                <li><a href="#">Newziland<img class="flag" src="content/images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+                                <li><a href="#">Pakistan<img class="flag" src="content/images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+                                <li><a href="#">United Kingdom<img class="flag" src="content/images/uk.png" alt="" /><span class="value">UK</span></a></li>
+                                <li><a href="#">United States<img class="flag" src="content/images/us.png" alt="" /><span class="value">US</span></a></li>
                             </ul>
                         </dd>
                     </dl>
