@@ -1,8 +1,17 @@
 <?php
 
-ob_start();
-$title = "AlphaSnow . Login";
+    /**
+     * @file      login.php
+     * @brief     This file is used to lodge or redirect to register.
+     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
+     * @update    Update Paul-Loup GERMAIN
+     * @version   10-FEB-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow . login";
 ?>
+
 <div class="main">
     <div class="shop_top">
         <div class="container">
@@ -20,7 +29,7 @@ $title = "AlphaSnow . Login";
                 <div class="login-title">
                     <h4 class="title">Registered Customers</h4>
                     <div id="loginbox" class="loginbox">
-                        <form action="" method="post" name="login" id="login-form">
+                        <form action="../index.php?action=login" method="post" name="login" id="login-form">
                             <fieldset class="input">
                                 <p id="login-form-username">
                                     <label for="modlgn_username">Email</label>
@@ -46,8 +55,7 @@ $title = "AlphaSnow . Login";
     </div>
 </div>
 
-
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";

@@ -1,8 +1,17 @@
 <?php
 
-ob_start();
-$title = "AlphaSnow . Register";
+    /**
+     * @file      register.php
+     * @brief     This file is used to register.
+     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
+     * @update    Update Paul-Loup GERMAIN
+     * @version   10-FEB-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow . Register";
 ?>
+
 <div class="main">
     <div class="shop_top">
         <div class="container">
@@ -46,7 +55,8 @@ $title = "AlphaSnow . Register";
         </div>
     </div>
 </div>
+
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";

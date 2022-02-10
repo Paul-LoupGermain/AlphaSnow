@@ -1,7 +1,14 @@
 <?php
 
+    /**
+     * @file      home.php
+     * @brief     This file is the rooter managing the link with controllers.
+     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
+     * @version   10-FEB-2022
+     */
+
     ob_start();
-$title = "AlphaSnow . Home";
+    $title = "AlphaSnow . Home";
 ?>
 
 <div class="banner">
@@ -10,7 +17,7 @@ $title = "AlphaSnow . Home";
         <div class="slider_container">
             <div class="slide">
                 <!-- Slide image -->
-                <img src="content/images/slider1.jpg" class="img-responsive" alt=""/>
+                <img src="view/content/images/slider1.jpg" class="img-responsive" alt=""/>
                 <!-- /Slide image -->
                 <!-- Texts container -->
                 <div class="slide_content">
@@ -25,7 +32,7 @@ $title = "AlphaSnow . Home";
             </div>
             <!-- /Duplicate to create more slides -->
             <div class="slide">
-                <img src="content/images/slider2.jpg" class="img-responsive" alt=""/>
+                <img src="view/content/images/slider2.jpg" class="img-responsive" alt=""/>
                 <div class="slide_content">
                     <div class="slide_content_wrap">
                         <h1 class="title">Run Over<br>Everything</h1>
@@ -47,11 +54,11 @@ $title = "AlphaSnow . Home";
         <p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
         <div class="close_but"><i class="close1"> </i></div>
         <ul id="flexiselDemo3">
-            <li><img src="content/images/board1.jpg" /></li>
-            <li><img src="content/images/board2.jpg" /></li>
-            <li><img src="content/images/board3.jpg" /></li>
-            <li><img src="content/images/board4.jpg" /></li>
-            <li><img src="content/images/board5.jpg" /></li>
+            <li><img src="view/content/images/board1.jpg" /></li>
+            <li><img src="view/content/images/board2.jpg" /></li>
+            <li><img src="view/content/images/board3.jpg" /></li>
+            <li><img src="view/content/images/board4.jpg" /></li>
+            <li><img src="view/content/images/board5.jpg" /></li>
         </ul>
         <h3>SnowBoard Extreme Series</h3>
         <script type="text/javascript">
@@ -81,7 +88,7 @@ $title = "AlphaSnow . Home";
 
             });
         </script>
-        <script type="text/javascript" src="content/js/jquery.flexisel.js"></script>
+        <script type="text/javascript" src="view/content/js/jquery.flexisel.js"></script>
     </div>
 </div>
 <div class="content-bottom">
@@ -102,7 +109,7 @@ $title = "AlphaSnow . Home";
         <div class="row">
             <div class="col-md-3 top_box">
                 <div class="view view-ninth"><a href="single.php">
-                        <img src="content/images/pic1.jpg" class="img-responsive" alt=""/>
+                        <img src="view/content/images/pic1.jpg" class="img-responsive" alt=""/>
                         <div class="mask mask-1"> </div>
                         <div class="mask mask-2"> </div>
                         <div class="content">
@@ -116,7 +123,7 @@ $title = "AlphaSnow . Home";
         </div>
         <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.php">
-                    <img src="content/images/pic2.jpg" class="img-responsive" alt=""/>
+                    <img src="view/content/images/pic2.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
                     <div class="content">
@@ -129,7 +136,7 @@ $title = "AlphaSnow . Home";
         </div>
         <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.php">
-                    <img src="content/images/pic3.jpg" class="img-responsive" alt=""/>
+                    <img src="view/content/images/pic3.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
                     <div class="content">
@@ -142,7 +149,7 @@ $title = "AlphaSnow . Home";
         </div>
         <div class="col-md-3 top_box1">
             <div class="view view-ninth"><a href="single.php">
-                    <img src="content/images/pic4.jpg" class="img-responsive" alt=""/>
+                    <img src="view/content/images/pic4.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
                     <div class="content">
