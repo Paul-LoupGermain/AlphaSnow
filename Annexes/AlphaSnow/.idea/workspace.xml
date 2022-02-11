@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/model/file_connector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/users_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/users_managment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="03f1e169-3325-4e86-a79a-3e08200df69f" name="localhost" port="8081" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="24ucPXpAHitje4EjhT1rbbaFvFD" />
@@ -53,6 +54,7 @@
       <workItem from="1644483889725" duration="2041000" />
       <workItem from="1644564027929" duration="5263000" />
       <workItem from="1644573745813" duration="796000" />
+      <workItem from="1644583711696" duration="2610000" />
     </task>
     <servers />
   </component>
