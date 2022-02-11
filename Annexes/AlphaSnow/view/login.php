@@ -20,7 +20,7 @@
                     <h4 class="title">New Customers</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
                     <div class="button1">
-                        <a href="register.php"><input type="submit" name="Submit" value="Create an Account"></a>
+                        <a href="../index.php?action=register"><input type="submit" name="Submit" value="Create an Account"></a>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -32,12 +32,12 @@
                         <form action="../index.php?action=login" method="post" name="login" id="login-form">
                             <fieldset class="input">
                                 <p id="login-form-username">
-                                    <label for="modlgn_username">Email</label>
-                                    <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+                                    <label for="input_email">Email</label>
+                                    <input id="input_email" type="text" name="email" class="inputbox" size="18" autocomplete="off">
                                 </p>
                                 <p id="login-form-password">
-                                    <label for="modlgn_passwd">Password</label>
-                                    <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+                                    <label for="input_password">Password</label>
+                                    <input id="input_password" type="password" name="password" class="inputbox" size="18" autocomplete="off">
                                 </p>
                                 <div class="remember">
                                     <p id="login-form-remember">

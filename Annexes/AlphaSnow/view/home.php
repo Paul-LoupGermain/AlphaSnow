@@ -2,7 +2,7 @@
 
     /**
      * @file      home.php
-     * @brief     This file is the rooter managing the link with controllers.
+     * @brief
      * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
      * @version   10-FEB-2022
      */
