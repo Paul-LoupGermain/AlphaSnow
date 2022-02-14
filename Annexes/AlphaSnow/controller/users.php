@@ -7,10 +7,6 @@
      * @version   10-FEB-2022
      */
 
-    function login(){
-        require "view/login.php";
-    }
-
     function register($login_request){
         if ((isset($login_request['inputFirstName'])) && (isset($login_request['inputLastName'])) && (isset($login_request['inputEmailAddress'])) && (isset($login_request['inputPassword']))){
             $inputFirstName = $login_request['inputFirstName'];
@@ -30,6 +26,27 @@
         }else{
             $loginErrorMessage = "Erreur";
             require "view/register.php";
+        }
+        require "view/login.php";
+    }
+
+    function login($login_request){
+        if ((isset($login_request['email'])) && (isset($login_request['password']))){
+            $inputEmailAddress = $login_request['email'];
+            $inputPassword = $login_request['password'];
+
+            require_once "model/users_managment.php";
+            if (isLoginCorrect($inputEmailAddress, $inputPassword)){
+                $_SESSION['email']=$inputEmailAddress;
+                require "view/home.php";
+            }else{
+                $loginErrorMessage = "Erreur";
+                require "view/login.php";
+            }
+
+        }else{
+            $loginErrorMessage = "Erreur";
+            require "view/login.php";
         }
     }
 
