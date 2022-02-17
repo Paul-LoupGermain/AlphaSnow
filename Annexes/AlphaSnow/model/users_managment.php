@@ -14,7 +14,7 @@
         //$email = $obj[0]['email'];
 
         foreach ($obj as $array){
-            if($email_verify == $array['email']){
+            if(($email_verify == $array['email']) && ($password_verify == $array['password'])){
                 require "view/home.php";
             }else{
                 require "view/lost.php";

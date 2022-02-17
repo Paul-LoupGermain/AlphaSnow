@@ -9,7 +9,7 @@
      */
 
     ob_start();
-    $title = "AlphaSnow . login";
+    $title = "AlphaSnow - login";
 ?>
 
 <div class="main">

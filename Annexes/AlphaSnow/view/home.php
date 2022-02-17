@@ -8,7 +8,7 @@
      */
 
     ob_start();
-    $title = "AlphaSnow . Home";
+    $title = "AlphaSnow - Home";
 ?>
 
 <div class="banner">

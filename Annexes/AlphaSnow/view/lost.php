@@ -9,7 +9,7 @@
      */
 
     ob_start();
-    $title = "AlphaSnow . Lost";
+    $title = "AlphaSnow - Lost";
 ?>
 
 <!-- Title Page -->
