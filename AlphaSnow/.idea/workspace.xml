@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/file_connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/file_connector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/users_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/users_managment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/lost.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/lost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +16,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
@@ -72,6 +71,7 @@
       <workItem from="1645084634592" duration="94000" />
       <workItem from="1645084814847" duration="283000" />
       <workItem from="1645085288954" duration="4418000" />
+      <workItem from="1645090845760" duration="172000" />
     </task>
     <servers />
   </component>
@@ -89,20 +89,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/model/file_connector.php</url>
-          <line>10</line>
-          <properties>
-            <option name="className" value="" />
-            <option name="methodName" value="\write_register_in_json" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,15 +1,15 @@
 <?php
 
-/**
- * @file      login.php
- * @brief     This file is used to lodge or redirect to register.
- * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
- * @update    Update Paul-Loup GERMAIN
- * @version   10-FEB-2022
- */
+    /**
+     * @file      login.php
+     * @brief     This file is used to lodge or redirect to register.
+     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
+     * @update    Update Paul-Loup GERMAIN
+     * @version   10-FEB-2022
+     */
 
-ob_start();
-$title = "AlphaSnow - Lost";
+    ob_start();
+    $title = "AlphaSnow - Lost";
 ?>
 
     <!-- Title Page -->
@@ -23,5 +23,5 @@ $title = "AlphaSnow - Lost";
     </p>
 
 <?php
-$content = ob_get_clean();
-require 'gabarit.php';
+    $content = ob_get_clean();
+    require 'gabarit.php';

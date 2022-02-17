@@ -26,6 +26,7 @@
     function save_register($array_input_user_form) {
         $new_register_to_write = extract_register($array_input_user_form);
         write_register_in_json($new_register_to_write);
+        require "view/home.php";
     }
 
     function extract_register($array_input_user_form) {
@@ -37,4 +38,3 @@
         return $new_register_temp;
     }
 
-    require "view/home.php";
