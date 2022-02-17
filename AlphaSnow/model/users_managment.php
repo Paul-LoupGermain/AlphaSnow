@@ -22,17 +22,19 @@
         }
     }
 
-    /*
-    function register($inputEmailAddress, $inputPassword){
-    $firstname = $inputFirstName['inputFirstName'];
-    $lastname = $inputLastName['inputLastName'];
-    $emailAddress = $inputEmailAddress['inputEmailAddress'];
-    $newsPassword = $inputPassword['inputPassword'];
-    $new_register_temp = array($firstname, $lastname, $emailAddress, $newsPassword);
-    return $new_register_temp;
+    require "file_connector.php";
+    function save_register($array_input_user_form) {
+        $new_register_to_write = extract_register($array_input_user_form);
+        write_register_in_json($new_register_to_write);
+    }
 
-    require "model/file_connector.php";
-}
+    function extract_register($array_input_user_form) {
+        $first_name = $array_input_user_form['register_firstname'];
+        $last_name = $array_input_user_form['register_lastname'];
+        $email = $array_input_user_form['register_email'];
+        $password = $array_input_user_form['register_password'];
+        $new_register_temp = array($first_name, $last_name, $email, $password);
+        return $new_register_temp;
+    }
 
-?>
-*/
+    require "view/home.php";

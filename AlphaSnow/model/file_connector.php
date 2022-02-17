@@ -2,8 +2,9 @@
 
     /**
      * @file      file_connector.php
-     * @brief
+     * @brief     This file is used to write the data to the json file
      * @author    Created by Paul-Loup GERMAIN
+     * @update    Update by Paul-Loup GERMAIN
      * @version   10-FEB-2022
      */
 
@@ -31,5 +32,3 @@
         fwrite($str_writer, $line_to_write  . "\r\n");
         fclose($str_writer);
     }
-
-?>

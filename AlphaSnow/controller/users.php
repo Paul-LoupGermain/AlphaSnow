@@ -8,30 +8,14 @@
      * @version   10-FEB-2022
      */
 
-    /*
-    function register($login_request){
-        if ((isset($login_request['inputFirstName'])) && (isset($login_request['inputLastName'])) && (isset($login_request['inputEmailAddress'])) && (isset($login_request['inputPassword']))){
-            $inputFirstName = $login_request['inputFirstName'];
-            $inputLastName = $login_request['inputLastName'];
-            $inputEmailAddress = $login_request['inputEmailAddress'];
-            $inputPassword = $login_request['inputPassword'];
-
+    function register($array_of_user_inputs){
+        if ((isset($array_of_user_inputs['register_firstname'])) && (isset($array_of_user_inputs['register_lastname'])) && (isset($array_of_user_inputs['register_email'])) && (isset($array_of_user_inputs['register_password']))) {
             require_once "model/users_managment.php";
-            if (isLoginCorrect($inputFirstName, $inputLastName, $inputEmailAddress, $inputPassword)){
-                $_SESSION['inputEmailAddress']=$inputEmailAddress;
-                require "view/home.php";
-            }else{
-                $loginErrorMessage = "Erreur";
-                require "view/login.php";
-            }
-
+            save_register($array_of_user_inputs);
         }else{
-            $loginErrorMessage = "Erreur";
             require "view/register.php";
         }
-        require "view/login.php";
     }
-    */
 
     function login($login_request){
         if ((isset($login_request['login_email'])) && (isset($login_request['login_password']))){
