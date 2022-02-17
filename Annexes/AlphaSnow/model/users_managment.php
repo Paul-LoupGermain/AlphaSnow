@@ -2,24 +2,24 @@
 
     /**
      * @file      users_managment.php
-     * @brief
+     * @brief     This file is used to retrieve data from the json file for controller if the login matches the data
      * @author    Created by Paul-Loup GERMAIN
+     * @update    Update Paul-Loup GERMAIN
      * @version   10-FEB-2022
      */
 
-    function isLoginCorrect($emailAddress, $password){
-        $obj = json_decode(require "data/register.json");
-        $email = $obj->email;
+    function is_login_correct($email_verify, $password_verify){
+        $file_content = file_get_contents('data/data_account.json');
+        $obj = json_decode($file_content,true);
+        //$email = $obj[0]['email'];
 
-        if ($obj == array($emailAddress, $password)){
-            require "view/home.php";
-        }else{
-            require "view/lost.php";
+        foreach ($obj as $array){
+            if($email_verify == $array['email']){
+                require "view/home.php";
+            }else{
+                require "view/lost.php";
+            }
         }
-
-
-
-
     }
 
     /*

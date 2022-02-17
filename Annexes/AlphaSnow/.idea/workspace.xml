@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/register.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/register.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/register.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/file_connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/file_connector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/users_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/users_managment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +69,9 @@
       <workItem from="1644573745813" duration="796000" />
       <workItem from="1644583711696" duration="2610000" />
       <workItem from="1644833230948" duration="4111000" />
+      <workItem from="1645016516769" duration="10000" />
+      <workItem from="1645082218253" duration="2365000" />
+      <workItem from="1645084634592" duration="94000" />
     </task>
     <servers />
   </component>
@@ -83,16 +89,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/model/users_managment.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

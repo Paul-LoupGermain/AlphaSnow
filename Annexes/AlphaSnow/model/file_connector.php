@@ -8,7 +8,7 @@
      */
 
     function write_register_in_json($register_to_write) {
-        $path_to_json_file = set_full_path("/data/register.json");
+        $path_to_json_file = set_full_path("/data/data_account.json");
         $encoded_register = json_encode($register_to_write);
         write_msg_in_file($path_to_json_file, $encoded_register, false);
     }

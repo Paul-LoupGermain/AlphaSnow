@@ -8,14 +8,14 @@
      */
 
     /**
-     * @brief This function is designed to redirect the user to the home page (depending on the action received by the index)
+     * @brief This function is designed to redirect the user to the home page
      */
     function home() {
         require "view/home.php";
     }
 
     /**
-     * @brief This function is designed to inform the user that the resource requested doesn't exist (i. e. if the user modify the url manually)
+     * @brief This function is designed to redirect the user to the lost page
      */
     function lost() {
         require "view/lost.php";

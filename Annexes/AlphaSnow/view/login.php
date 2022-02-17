@@ -33,11 +33,11 @@
                             <fieldset class="input">
                                 <p id="login-form-username">
                                     <label for="input_email">Email</label>
-                                    <input id="input_email" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+                                    <input id="input_email" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
                                 </p>
                                 <p id="login-form-password">
                                     <label for="input_password">Password</label>
-                                    <input id="input_password" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+                                    <input id="input_password" type="password" name="login_password" class="inputbox" size="18" autocomplete="off">
                                 </p>
                                 <div class="remember">
                                     <p id="login-form-remember">
