@@ -4,7 +4,6 @@
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_account.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/file_connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/file_connector.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,7 @@
       <workItem from="1645085288954" duration="4418000" />
       <workItem from="1645090845760" duration="172000" />
       <workItem from="1645168167850" duration="5812000" />
+      <workItem from="1645190054452" duration="2728000" />
     </task>
     <servers />
   </component>
@@ -88,5 +88,20 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/model/users_managment.php</url>
+          <line>10</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\is_login_correct" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
