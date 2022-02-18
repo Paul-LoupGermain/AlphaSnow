@@ -1,6 +1,10 @@
 [
   {
-    "email" : "alpha@cpnv.ch",
-    "password" : "1234"
+    "email":"test@ch",
+    "password":"1234"
+  },
+  {
+    "email":"test2@ch",
+    "password":"5678"
   }
 ]

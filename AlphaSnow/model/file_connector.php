@@ -10,7 +10,12 @@
 
     function write_register_in_json($register_to_write) {
         $path_to_json_file = set_full_path("/data/data_account.json");
-        $encoded_register = json_encode($register_to_write);
+        //$encoded_register = json_encode($register_to_write);
+        //write_msg_in_file($path_to_json_file, $encoded_register, false);
+        $encoded_register = json_encode(array(
+            "email" => $register_to_write['2'],
+            "password" => $register_to_write['3']
+        ));
         write_msg_in_file($path_to_json_file, $encoded_register, false);
     }
 
