@@ -5,9 +5,13 @@
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   10-FEB-2022
+     * @version   03-MAR-2022
      */
 
+    /**
+     * @brief This function checks if the user has filled in the register form fields correctly.
+     * @param $array_of_user_inputs
+     */
     function register($array_of_user_inputs){
         if ((isset($array_of_user_inputs['register_firstname'])) && (isset($array_of_user_inputs['register_lastname'])) && (isset($array_of_user_inputs['register_email'])) && (isset($array_of_user_inputs['register_password']))) {
             require_once "model/users_managment.php";
@@ -17,6 +21,10 @@
         }
     }
 
+    /**
+     * @brief This function checks if the user has filled in the login form fields correctly.
+     * @param $login_request
+     */
     function login($login_request){
         if ((isset($login_request['login_email'])) && (isset($login_request['login_password']))){
             $input_email_address = $login_request['login_email'];
@@ -34,4 +42,3 @@
             require "view/login.php";
         }
     }
-
