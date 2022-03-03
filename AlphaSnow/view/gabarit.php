@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="col-md-12">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="../index.php"><img src="view/content/images/logo.png" alt=""/></a>
+                                <a href="../index.php"><img align="center" width="75px" src="view/content/images/favicon.png" alt=""/></a>
                             </div>
                             <div class="menu">
                                 <a class="toggleMenu" href="#"><img src="view/content/images/nav.png" alt="" /></a>
