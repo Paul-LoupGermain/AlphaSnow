@@ -10,13 +10,21 @@
 
     function write_register_in_json($register_to_write) {
         $path_to_json_file = set_full_path("/data/data_account.json");
-        //$encoded_register = json_encode($register_to_write);
-        //write_msg_in_file($path_to_json_file, $encoded_register, false);
+
+        $file = file_get_contents(set_full_path("/data/data_account.json"));
+        $jsonLoad = json_decode($file, true);
+
         $encoded_register = json_encode(array(
-            "email" => $register_to_write['2'],
-            "password" => $register_to_write['3']
+            "email" => $register_to_write['0'],
+            "password" => $register_to_write['1']
         ));
-        write_msg_in_file($path_to_json_file, $encoded_register, false);
+
+        array_push($jsonLoad, $encoded_register);
+        $jsonUnLoad = json_encode($jsonLoad);
+        file_put_contents("../data/data_account.json", $jsonUnLoad);
+        //return true;
+
+        write_msg_in_file($path_to_json_file, $jsonUnLoad, false);
     }
 
     function set_full_path($f_name) {
@@ -32,8 +40,10 @@
         } else {
             $str_writer = fopen($file_full_path, "a+");
             $line_to_write = $line_to_write;
+
         }
 
         fwrite($str_writer, $line_to_write  . "\r\n");
         fclose($str_writer);
     }
+

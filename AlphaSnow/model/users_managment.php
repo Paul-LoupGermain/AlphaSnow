@@ -28,31 +28,30 @@
         }
     }
 
+    /*
     function save_register($email, $password){
-        $file_content = file_get_contents('data/data_account.json');
-        $obj = json_decode($file_content,true);
+        $file_content_register = file_get_contents('data/data_account.json');
+        $obj_register = json_decode($file_content_register,true);
 
         $userData = array("email" => $email,"password" => $password);
-        $obj .= $userData;
+        $obj_register .= $userData;
 
-        $obj_encode = json_encode($obj);
+        $obj_encode = json_encode($obj_register);
         file_put_contents('data/data_account.json',$obj_encode);
-    }
+    }*/
 
-    /*
+
     require "file_connector.php";
-    function save_register($array_input_user_form) {
-        $new_register_to_write = extract_register($array_input_user_form);
+    function save_register($email_register, $password_register) {
+        $new_register_to_write = extract_register($email_register, $password_register);
         write_register_in_json($new_register_to_write);
         require "view/home.php";
     }
 
-    function extract_register($array_input_user_form) {
-        $first_name = $array_input_user_form['register_firstname'];
-        $last_name = $array_input_user_form['register_lastname'];
-        $email = $array_input_user_form['register_email'];
-        $password = $array_input_user_form['register_password'];
-        $new_register_temp = array($first_name, $last_name, $email, $password);
+    function extract_register($email_register, $password_register) {
+        $email = $email_register;
+        $password = $password_register;
+        $new_register_temp = array($email, $password);
         return $new_register_temp;
-    }*/
+    }
 
