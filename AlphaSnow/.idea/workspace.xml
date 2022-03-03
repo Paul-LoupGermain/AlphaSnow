@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/users_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/users_managment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="03f1e169-3325-4e86-a79a-3e08200df69f" name="localhost" port="8081" />
@@ -71,6 +74,9 @@
       <workItem from="1645090845760" duration="172000" />
       <workItem from="1645168167850" duration="5812000" />
       <workItem from="1645190054452" duration="2728000" />
+      <workItem from="1646042967111" duration="3000" />
+      <workItem from="1646044480263" duration="1411000" />
+      <workItem from="1646225515779" duration="2000" />
     </task>
     <servers />
   </component>
@@ -88,20 +94,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/model/users_managment.php</url>
-          <line>10</line>
-          <properties>
-            <option name="className" value="" />
-            <option name="methodName" value="\is_login_correct" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

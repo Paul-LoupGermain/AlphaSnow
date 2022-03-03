@@ -11,7 +11,7 @@
     function register($array_of_user_inputs){
         if ((isset($array_of_user_inputs['register_firstname'])) && (isset($array_of_user_inputs['register_lastname'])) && (isset($array_of_user_inputs['register_email'])) && (isset($array_of_user_inputs['register_password']))) {
             require_once "model/users_managment.php";
-            save_register($array_of_user_inputs);
+            save_register($array_of_user_inputs['register_email'],$array_of_user_inputs['register_password']);
         }else{
             require "view/register.php";
         }

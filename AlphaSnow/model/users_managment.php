@@ -11,17 +11,35 @@
     function is_login_correct($email_verify, $password_verify){
         $file_content = file_get_contents('data/data_account.json');
         $obj = json_decode($file_content,true);
+        $error = false;
         //$email = $obj[0]['email'];
 
         foreach ($obj as $array){
             if(($email_verify == $array['email']) && ($password_verify == $array['password'])){
                 require "view/home.php";
+                $error = false;
             }else{
-                require "view/lost.php";
+                $error = true;
             }
+        }
+
+        if ($error){
+            require "view/lost.php";
         }
     }
 
+    function save_register($email, $password){
+        $file_content = file_get_contents('data/data_account.json');
+        $obj = json_decode($file_content,true);
+
+        $userData = array("email" => $email,"password" => $password);
+        $obj .= $userData;
+
+        $obj_encode = json_encode($obj);
+        file_put_contents('data/data_account.json',$obj_encode);
+    }
+
+    /*
     require "file_connector.php";
     function save_register($array_input_user_form) {
         $new_register_to_write = extract_register($array_input_user_form);
@@ -36,5 +54,5 @@
         $password = $array_input_user_form['register_password'];
         $new_register_temp = array($first_name, $last_name, $email, $password);
         return $new_register_temp;
-    }
+    }*/
 
