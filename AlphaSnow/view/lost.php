@@ -1,7 +1,7 @@
 <?php
 
     /**
-     * @file      login.php
+     * @file      lost.php
      * @brief     This file is used to lodge or redirect to register.
      * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
      * @update    Update Paul-Loup GERMAIN
