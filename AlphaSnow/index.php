@@ -27,6 +27,24 @@
             case 'logout':
                 logout();
                 break;
+            case 'shop' :
+                shop();
+                break;
+            case 'team' :
+                team();
+                break;
+            case 'experiance' :
+                experiance();
+                break;
+            case 'contact' :
+                contact();
+                break;
+            case 'checkout' :
+                checkout();
+                break;
+            case 'single' :
+                single();
+                break;
             default :
                 lost();
         }

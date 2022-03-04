@@ -68,12 +68,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="menu">
                                 <a class="toggleMenu" href="#"><img src="view/content/images/nav.png" alt="" /></a>
                                 <ul class="nav" id="nav">
-                                    <li><a href="shop.php">Shop</a></li>
-                                    <li><a href="team.php">Team</a></li>
-                                    <li><a href="experiance.php">Events</a></li>
-                                    <li><a href="experiance.php">Experiance</a></li>
-                                    <li><a href="shop.php">Company</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
+                                    <li><a href="../index.php?action=shop">Shop</a></li>
+                                    <li><a href="../index.php?action=team">Team</a></li>
+                                    <li><a href="../index.php?action=experiance">Experiance</a></li>
+                                    <li><a href="../index.php?action=contact">Contact</a></li>
                                     <div class="clear"></div>
                                 </ul>
                                 <script type="text/javascript" src="view/content/js/responsive-nav.js"></script>
@@ -110,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
                                             $12.00</span></li>
                                         <div class="login_buttons">
-                                            <div class="check_button"><a href="checkout.php">Check out</a></div>
+                                            <div class="check_button"><a href="../index.php?action=checkout">Check out</a></div>
                                             <div class="login_button"><a href="../index.php?action=login">Login</a></div>
                                             <div class="clear"></div>
                                         </div>

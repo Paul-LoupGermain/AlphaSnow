@@ -645,7 +645,7 @@ i.close1{
    -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
 }
-.view a.info: hover {
+.view a.info:hover {
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
@@ -1652,7 +1652,7 @@ fieldset.input input[type="submit"]:hover {
 }
 #login-form label a {
 	color: #777;
-	color:0.85em;
+	color: 0.85em;
 }
 #login-form label a:hover {
 	color:#00BFF0;
@@ -2022,9 +2022,9 @@ h4.m_11 {
 	 width:50px !important;
 	 height:50px !important;
   }
-  .register-top-grid(
-  	margin-bottom:20px;
-  )
+  .register-top-grid {
+	  margin-bottom: 20px;
+  }
   .nav {
 	top: 66px;
 	right: 8px;

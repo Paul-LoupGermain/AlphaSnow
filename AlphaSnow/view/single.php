@@ -12,33 +12,33 @@ $title = "AlphaSnow . Single";
                         <ul id="etalage">
                             <li>
                                 <a href="optionallink.html">
-                                    <img class="etalage_thumb_image" src="content/images/3.jpg" />
-                                    <img class="etalage_source_image" src="content/images/3.jpg" />
+                                    <img class="etalage_thumb_image" src="view/content/images/3.jpg" />
+                                    <img class="etalage_source_image" src="view/content/images/3.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/4.jpg" />
-                                <img class="etalage_source_image" src="content/images/4.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/4.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/4.jpg" />
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/5.jpg" />
-                                <img class="etalage_source_image" src="content/images/5.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/5.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/5.jpg" />
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/6.jpg" />
-                                <img class="etalage_source_image" src="content/images/6.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/6.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/6.jpg" />
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/7.jpg" />
-                                <img class="etalage_source_image" src="content/images/7.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/7.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/7.jpg" />
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/8.jpg" />
-                                <img class="etalage_source_image" src="content/images/8.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/8.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/8.jpg" />
                             </li>
                             <li>
-                                <img class="etalage_thumb_image" src="content/images/9.jpg" />
-                                <img class="etalage_source_image" src="content/images/9.jpg" />
+                                <img class="etalage_thumb_image" src="view/content/images/9.jpg" />
+                                <img class="etalage_source_image" src="view/content/images/9.jpg" />
                             </li>
                         </ul>
                     </div>
@@ -71,7 +71,7 @@ $title = "AlphaSnow . Single";
                             </form>
                         </div>
                         <ul class="add-to-links">
-                            <li><img src="content/images/wish.png" alt=""><a href="#">Add to wishlist</a></li>
+                            <li><img src="view/content/images/wish.png" alt=""><a href="#">Add to wishlist</a></li>
                         </ul>
                         <div class="social_buttons">
                             <h4>95 Items</h4>
@@ -118,9 +118,9 @@ $title = "AlphaSnow . Single";
             <div class="row">
                 <h4 class="m_11">Related Products in the same Category</h4>
                 <div class="col-md-4 product1">
-                    <img src="content/images/s1.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="single.php">
-                        </a><h3><a href="single.php"></a><a href="#">aliquam volutp</a></h3>
+                    <img src="view/content/images/s1.jpg" class="img-responsive" alt=""/>
+                    <div class="shop_desc"><a href="../index.php?action=single">
+                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
                         <p>Lorem ipsum consectetuer adipiscing </p>
                         <span class="reducedfrom">$66.00</span>
                         <span class="actual">$12.00</span><br>
@@ -132,9 +132,9 @@ $title = "AlphaSnow . Single";
                     </div>
                 </div>
                 <div class="col-md-4 product1">
-                    <img src="content/images/s2.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="single.php">
-                        </a><h3><a href="single.php"></a><a href="#">aliquam volutp</a></h3>
+                    <img src="view/content/images/s2.jpg" class="img-responsive" alt=""/>
+                    <div class="shop_desc"><a href="../index.php?action=single">
+                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
                         <p>Lorem ipsum consectetuer adipiscing </p>
                         <span class="reducedfrom">$66.00</span>
                         <span class="actual">$12.00</span><br>
@@ -146,9 +146,9 @@ $title = "AlphaSnow . Single";
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="content/images/s3.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="single.php">
-                        </a><h3><a href="single.php"></a><a href="#">aliquam volutp</a></h3>
+                    <img src="view/content/images/s3.jpg" class="img-responsive" alt=""/>
+                    <div class="shop_desc"><a href="../index.php?action=single">
+                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
                         <p>Lorem ipsum consectetuer adipiscing </p>
                         <span class="reducedfrom">$66.00</span>
                         <span class="actual">$12.00</span><br>

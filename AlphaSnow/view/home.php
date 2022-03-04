@@ -108,7 +108,7 @@
         <div class="close_but"><i class="close1"> </i></div>
         <div class="row">
             <div class="col-md-3 top_box">
-                <div class="view view-ninth"><a href="single.php">
+                <div class="view view-ninth"><a href="../index.php?action=single">
                         <img src="view/content/images/pic1.jpg" class="img-responsive" alt=""/>
                         <div class="mask mask-1"> </div>
                         <div class="mask mask-2"> </div>
@@ -122,7 +122,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box">
-            <div class="view view-ninth"><a href="single.php">
+            <div class="view view-ninth"><a href="../index.php?action=single">
                     <img src="view/content/images/pic2.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
@@ -135,7 +135,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box">
-            <div class="view view-ninth"><a href="single.php">
+            <div class="view view-ninth"><a href="../index.php?action=single">
                     <img src="view/content/images/pic3.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
@@ -148,7 +148,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box1">
-            <div class="view view-ninth"><a href="single.php">
+            <div class="view view-ninth"><a href="../index.php?action=single">
                     <img src="view/content/images/pic4.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
