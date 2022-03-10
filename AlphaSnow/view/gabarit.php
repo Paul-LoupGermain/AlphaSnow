@@ -72,6 +72,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <li><a href="../index.php?action=team">Team</a></li>
                                     <li><a href="../index.php?action=experiance">Experiance</a></li>
                                     <li><a href="../index.php?action=contact">Contact</a></li>
+                                    <li>
+                                        <?php if (isset($_SESSION['login_email'])) : ?>
+                                            <a href="../index.php?action=logout">Logout</a>
+                                        <?php else : ?>
+                                            <a href="../index.php?action=login">Login</a>
+                                            <li><a href="../index.php?action=register">Register</a></li>
+                                        <?php endif;?>
+                                    </li>
+                                    <li>
+                                        <div class="topbar-child2">
+                                            <span class="topbar-email text-color">
+                                                <?php if (isset($_SESSION['login_email'])) : ?>
+                                                    <?=$_SESSION['login_email']; ?>
+                                                <?php endif;?>
+                                            </span>
+                                        </div>
+                                    </li>
                                     <div class="clear"></div>
                                 </ul>
                                 <script type="text/javascript" src="view/content/js/responsive-nav.js"></script>

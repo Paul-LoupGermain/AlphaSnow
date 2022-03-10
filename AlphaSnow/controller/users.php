@@ -42,3 +42,18 @@
             require "view/login.php";
         }
     }
+
+
+    /**
+     * @brief This function is used to disconnect from the session.
+     */
+    function logout(){
+        /*
+        session_start();
+        unset($_SESSION["login_email"]);
+        header("Location:login.php");
+        */
+        session_destroy(); //destroy the session
+        header("location:/index.php"); //to redirect back to "index.php" after logging out
+        exit();
+    }

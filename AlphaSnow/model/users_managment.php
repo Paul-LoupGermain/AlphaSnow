@@ -16,17 +16,10 @@
     function is_login_correct($email_verify, $password_verify){
         $file_content = file_get_contents('data/data_account.json');
         $obj = json_decode($file_content,true);
-        $error = false;
         foreach ($obj as $array){
             if(($email_verify == $array['email']) && ($password_verify == $array['password'])){
-                require "view/home.php";
-                $error = false;
-            }else{
-                $error = true;
+                return true;
             }
-        }
-        if ($error){
-            require "view/lost.php";
         }
     }
 

@@ -3,16 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/users_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/users_managment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/content/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/content/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/experiance.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/experiance.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gabarit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/team.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/team.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.WebServer">
@@ -90,6 +85,10 @@
       <workItem from="1646300570913" duration="35000" />
       <workItem from="1646377777813" duration="4387000" />
       <workItem from="1646397717798" duration="2761000" />
+      <workItem from="1646401345693" duration="186000" />
+      <workItem from="1646829613677" duration="7000" />
+      <workItem from="1646896579926" duration="628000" />
+      <workItem from="1646897399837" duration="5427000" />
     </task>
     <servers />
   </component>

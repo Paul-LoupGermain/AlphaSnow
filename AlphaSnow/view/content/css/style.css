@@ -2,6 +2,11 @@
 	text-align: center;
 }
 
+.text-color{
+	color: #9a9a9a;
+	font-size: 0.75rem;
+}
+
 .clear{clear: both;}
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
@@ -24,7 +29,7 @@ body a{
 }
 .header-left{
 	float:left;
-	width: 59%;
+	width: 75%;
 }
 .logo{
 	float:left;
