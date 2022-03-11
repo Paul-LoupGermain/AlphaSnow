@@ -1,0 +1,22 @@
+[
+  {
+    "model": "Rossignol",
+    "price": "399",
+    "description": "Pour une glisse plus fraîche"
+  },
+  {
+    "model": "Salomon",
+    "price": "599",
+    "description": "Pour une glisse sans fin"
+  },
+  {
+    "model": "Head",
+    "price": "799",
+    "description": "Pour une glisse de compétition"
+  },
+  {
+    "model": "Salomon",
+    "price": "299",
+    "description": "Pour une glisse plaine d'amour"
+  }
+]

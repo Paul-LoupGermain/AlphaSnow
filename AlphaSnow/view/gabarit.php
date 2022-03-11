@@ -70,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <ul class="nav" id="nav">
                                     <li><a href="../index.php?action=shop">Shop</a></li>
                                     <li><a href="../index.php?action=team">Team</a></li>
-                                    <li><a href="../index.php?action=experiance">Experiance</a></li>
+                                    <li><a href="../index.php?action=experience">Experience</a></li>
                                     <li><a href="../index.php?action=contact">Contact</a></li>
                                     <li>
                                         <?php if (isset($_SESSION['login_email'])) : ?>

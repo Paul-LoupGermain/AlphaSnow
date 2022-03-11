@@ -22,13 +22,6 @@
     }
 
     /**
-     * @brief This function is designed to redirect the user to the shop page
-     */
-    function shop(){
-        require "view/shop.php";
-    }
-
-    /**
      * @brief This function is designed to redirect the user to the team page
      */
     function team(){
@@ -38,7 +31,7 @@
     /**
      * @brief This function is designed to redirect the user to the experiance page
      */
-    function experiance(){
+    function experience(){
         require "view/experiance.php";
     }
 
