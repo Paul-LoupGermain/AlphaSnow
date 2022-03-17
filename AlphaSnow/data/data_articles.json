@@ -12,25 +12,27 @@
     "marque": "Salomon",
     "model": "GYPSY",
     "code": "3622",
-    "price": "599",
+    "price": "599.00",
     "description": "Pour une glisse sans fin",
     "description_grande": "Dotée d’une forme inspirée du freestyle, cette board destinée aux inconditionnelles du snowpark garantit un excellent contrôle, une grande maniabilité et un flex optimal. Avec son Rock Out Camber et son noyau Popster Booster, cette board super dynamique amortit les réceptions et absorbe les inégalités du terrain.",
     "photo": "view/content/img/snow/salomon.png"
   },
   {
     "marque": "Head",
-    "model": "Bluefire",
-    "code": "4532",
-    "price": "799",
+    "model": "DAY LYT SNOWBOARD",
+    "code": "330110",
+    "price": "799.00",
     "description": "Pour une glisse de compétition",
+    "description_grande": "Construite pour la neige profonde et les pentes raides, la DAY LYT est tout simplement inarrêtable dans la poudreuse. Comme son nom l'indique, nous avons rendu la planche super légère grâce à l'utilisation de l'Hexagonal Core. Avec son long nose qui génère de la portance, son pintail court et son set-back camber, cette board a tout pour séduire dans la neige fraîche et les lignes de big mountain. Elle est \"Split Ready\", car le stringer central en bambou donne, lorsque la planche est sciée, deux chants latéraux hydrofuges qui protègent le noyau de l'humidité.\n\nTraduit avec www.DeepL.com/Translator (version gratuite)",
     "photo": "view/content/img/snow/head.jpg"
   },
   {
     "marque": "Salomon",
-    "model": "Heart",
+    "model": "NO DRAMA",
     "code": "9852",
-    "price": "299",
+    "price": "399.00",
     "description": "Pour une glisse plaine d'amour",
+    "description_grande": "Conçue pour tous les niveaux de performance en snowpark, des jibbers débutants aux pros comme Maddie Mastro. La No Drama est dotée d’un Quad Camber et d’un noyau Popster pour une détente maximale à l’amorce des sauts, des side hits et des murs de half-pipe, tandis que la ligne de cotes EQ Rad conserve le caractère ludique et tolérant de cette board dans les snowparks et sur les rails.",
     "photo": "view/content/img/snow/salomon2.jpg"
   }
 ]
