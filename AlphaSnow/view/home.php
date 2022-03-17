@@ -25,7 +25,7 @@
                         <!-- Text title -->
                         <h1 class="title">Run Over<br>Everything</h1>
                         <!-- /Text title -->
-                        <div class="button"><a href="#">See Details</a></div>
+                        <div class="button"><a href="../index.php?action=experience">See Details</a></div>
                     </div>
                 </div>
                 <!-- /Texts container -->
@@ -108,7 +108,7 @@
         <div class="close_but"><i class="close1"> </i></div>
         <div class="row">
             <div class="col-md-3 top_box">
-                <div class="view view-ninth"><a href="../index.php?action=single">
+                <div class="view view-ninth"><a href="../index.php?action=shop">
                         <img src="view/content/images/pic1.jpg" class="img-responsive" alt=""/>
                         <div class="mask mask-1"> </div>
                         <div class="mask mask-2"> </div>
@@ -122,7 +122,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box">
-            <div class="view view-ninth"><a href="../index.php?action=single">
+            <div class="view view-ninth"><a href="../index.php?action=shop">
                     <img src="view/content/images/pic2.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
@@ -135,7 +135,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box">
-            <div class="view view-ninth"><a href="../index.php?action=single">
+            <div class="view view-ninth"><a href="../index.php?action=shop">
                     <img src="view/content/images/pic3.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>
@@ -148,7 +148,7 @@
             <p class="m_5">claritatem insitam</p>
         </div>
         <div class="col-md-3 top_box1">
-            <div class="view view-ninth"><a href="../index.php?action=single">
+            <div class="view view-ninth"><a href="../index.php?action=shop">
                     <img src="view/content/images/pic4.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"> </div>
                     <div class="mask mask-2"> </div>

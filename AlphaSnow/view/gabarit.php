@@ -125,8 +125,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
                                             $12.00</span></li>
                                         <div class="login_buttons">
-                                            <div class="check_button"><a href="../index.php?action=checkout">Check out</a></div>
-                                            <div class="login_button"><a href="../index.php?action=login">Login</a></div>
+                                            <div class="login_button"><a href="../index.php?action=checkout">Check out</a></div>
                                             <div class="clear"></div>
                                         </div>
                                         <div class="clear"></div>
