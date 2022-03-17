@@ -12,33 +12,9 @@ $title = "AlphaSnow . Single";
                         <ul id="etalage">
                             <li>
                                 <a href="optionallink.html">
-                                    <img class="etalage_thumb_image" src="view/content/images/3.jpg" />
-                                    <img class="etalage_source_image" src="view/content/images/3.jpg" />
+                                    <img class="img-responsive" src="view/content/images/3.jpg" />
+                                    <img class="img-responsive" src="view/content/images/3.jpg" />
                                 </a>
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/4.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/4.jpg" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/5.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/5.jpg" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/6.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/6.jpg" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/7.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/7.jpg" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/8.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/8.jpg" />
-                            </li>
-                            <li>
-                                <img class="etalage_thumb_image" src="view/content/images/9.jpg" />
-                                <img class="etalage_source_image" src="view/content/images/9.jpg" />
                             </li>
                         </ul>
                     </div>
@@ -54,16 +30,6 @@ $title = "AlphaSnow . Single";
                             <li><a href="#">145</a></li>
                             <li><a href="#">162(w)</a></li>
                             <li><a href="#">163</a></li>
-                        </ul>
-                        <ul class="product-colors">
-                            <h3>available Colors</h3>
-                            <li><a class="color1" href="#"><span> </span></a></li>
-                            <li><a class="color2" href="#"><span> </span></a></li>
-                            <li><a class="color3" href="#"><span> </span></a></li>
-                            <li><a class="color4" href="#"><span> </span></a></li>
-                            <li><a class="color5" href="#"><span> </span></a></li>
-                            <li><a class="color6" href="#"><span> </span></a></li>
-                            <div class="clear"> </div>
                         </ul>
                         <div class="btn_form">
                             <form>
@@ -114,51 +80,6 @@ $title = "AlphaSnow . Single";
             <div class="desc">
                 <h4>Description</h4>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores</p>
-            </div>
-            <div class="row">
-                <h4 class="m_11">Related Products in the same Category</h4>
-                <div class="col-md-4 product1">
-                    <img src="view/content/images/s1.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="../index.php?action=single">
-                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
-                        <p>Lorem ipsum consectetuer adipiscing </p>
-                        <span class="reducedfrom">$66.00</span>
-                        <span class="actual">$12.00</span><br>
-                        <ul class="buttons">
-                            <li class="cart"><a href="#">Add To Cart</a></li>
-                            <li class="shop_btn"><a href="#">Read More</a></li>
-                            <div class="clear"> </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 product1">
-                    <img src="view/content/images/s2.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="../index.php?action=single">
-                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
-                        <p>Lorem ipsum consectetuer adipiscing </p>
-                        <span class="reducedfrom">$66.00</span>
-                        <span class="actual">$12.00</span><br>
-                        <ul class="buttons">
-                            <li class="cart"><a href="#">Add To Cart</a></li>
-                            <li class="shop_btn"><a href="#">Read More</a></li>
-                            <div class="clear"> </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="view/content/images/s3.jpg" class="img-responsive" alt=""/>
-                    <div class="shop_desc"><a href="../index.php?action=single">
-                        </a><h3><a href="../index.php?action=single"></a><a href="#">aliquam volutp</a></h3>
-                        <p>Lorem ipsum consectetuer adipiscing </p>
-                        <span class="reducedfrom">$66.00</span>
-                        <span class="actual">$12.00</span><br>
-                        <ul class="buttons">
-                            <li class="cart"><a href="#">Add To Cart</a></li>
-                            <li class="shop_btn"><a href="#">Read More</a></li>
-                            <div class="clear"> </div>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -2,6 +2,13 @@
 	text-align: center;
 }
 
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
 .text-color{
 	color: #9a9a9a;
 	font-size: 0.75rem;

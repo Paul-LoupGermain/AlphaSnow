@@ -1,22 +1,30 @@
 [
   {
     "model": "Rossignol",
+    "code": "7648",
     "price": "399",
-    "description": "Pour une glisse plus fraîche"
+    "description": "Pour une glisse plus fraîche",
+    "photo": "view/content/img/snow/rossignol.jpg"
   },
   {
     "model": "Salomon",
+    "code": "3622",
     "price": "599",
-    "description": "Pour une glisse sans fin"
+    "description": "Pour une glisse sans fin",
+    "photo": "view/content/img/snow/salomon.png"
   },
   {
     "model": "Head",
+    "code": "4532",
     "price": "799",
-    "description": "Pour une glisse de compétition"
+    "description": "Pour une glisse de compétition",
+    "photo": "view/content/img/snow/head.jpg"
   },
   {
     "model": "Salomon",
+    "code": "9852",
     "price": "299",
-    "description": "Pour une glisse plaine d'amour"
+    "description": "Pour une glisse plaine d'amour",
+    "photo": "view/content/img/snow/salomon2.jpg"
   }
 ]

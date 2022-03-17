@@ -105,7 +105,7 @@
 		font-size: 4em;
 	}
 }
-@media (max-width:768px)
+@media (max-width:768px){
 	#fwslider .title {
 		margin-left: 19%;
 		font-size: 3em;

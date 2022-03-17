@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_account.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gabarit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_articles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/articles_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/articles_managment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/css/fwslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/content/css/fwslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/content/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../A - CPNV/ICT - 151 - PHP SQL/Login delogin" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -98,6 +101,10 @@
       <workItem from="1646897399837" duration="5427000" />
       <workItem from="1646903787151" duration="1101000" />
       <workItem from="1646983457261" duration="3379000" />
+      <workItem from="1646987006863" duration="712000" />
+      <workItem from="1647001894963" duration="11000" />
+      <workItem from="1647001939172" duration="7000" />
+      <workItem from="1647434565385" duration="6121000" />
     </task>
     <servers />
   </component>
