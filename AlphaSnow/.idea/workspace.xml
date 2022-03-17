@@ -4,12 +4,16 @@
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_articles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/Rossignol-SPLITBOARD/ro1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/Rossignol-SPLITBOARD/ro2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/articles_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/articles_managment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/Rossignol-SPLITBOARD/ro1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/Rossignol-SPLITBOARD/ro2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/head-DAY LYT/day-lyt (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-GYPSY/salo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +112,7 @@
       <workItem from="1647500888752" duration="7824000" />
       <workItem from="1647509437394" duration="777000" />
       <workItem from="1647510647965" duration="316000" />
+      <workItem from="1647511353994" duration="1959000" />
     </task>
     <servers />
   </component>

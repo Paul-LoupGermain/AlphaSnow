@@ -17,8 +17,8 @@
         <div class="col-md-3 shop_box">
             <a href="index.php?action=single&code=<?=$article['code']; ?>">
 
-                <?php if(is_file($article['photo'])) :?>
-                    <img src="<?=$article['photo']?>" class="img-responsive" alt="">
+                <?php if(is_file($article['photo1'])) :?>
+                    <img src="<?=$article['photo1']?>" class="img-responsive" alt="">
                 <?php else :?>
                     <img src="" class="img-responsive" alt="">
                 <?php endif; ?>

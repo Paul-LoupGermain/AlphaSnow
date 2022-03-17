@@ -28,7 +28,9 @@
         $code = Null;
         $price = Null;
         $description = Null;
-        $photo = Null;
+        $description_grande = Null;
+        $photo1 = Null;
+        $photo2 = Null;
 
         foreach ($obj as $item) {
             if ($info['code'] == $item['code']){
@@ -37,7 +39,9 @@
                 $code = $item['code'];
                 $price = $item['price'];
                 $description = $item['description'];
-                $photo = $item['photo'];
+                $description_grande = $item['description_grande'];
+                $photo1 = $item['photo1'];
+                $photo2 = $item['photo2'];
 
                 $article_detail = array(
                     'marque' => $marque,
@@ -45,7 +49,9 @@
                     'code' => $code,
                     'price' => $price,
                     'description' => $description,
-                    'photo' => $photo
+                    'description_grande' => $description_grande,
+                    'photo1' => $photo1,
+                    'photo2' => $photo2
                 );
                 break;
             }

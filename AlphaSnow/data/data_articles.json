@@ -1,12 +1,13 @@
 [
   {
     "marque": "Rossignol",
-    "model": "SPLITBOARD",
+    "model": "SPLIT",
     "code": "7648",
     "price": "869.00",
     "description": "Pour une glisse plus fraîche",
     "description_grande": "Élaborée en collaboration avec Marion Haerty, triple Championne du Monde de Freeride, pour toutes les filles qui cherchent une board à la conduite à la fois proche de celle d'un surf et d'une twin en fonction des points appuis, la After Hours Split est joueuse, stable et très fiable dans tous les compartiments de ride et sur toutes les neiges. Plus fine et plus compacte que la Sashimi Split développée par Xavier De Le Rue, donc plus légère, avec plus de talon, des rayons plus courts, un peu plus de cambre et un pintail beaucoup moins prononcé, elle développe autant de performances exceptionnelles en extrême qu'en backcountry freestyle, carving ou en conditions de neiges difficiles.\n\nPop explosif et stabilité\nLe profil AmpTek Elite correspond à une combinaison de cambre positif sur plus de 60% de la longueur de carre effective et de rocker, ou cambre négatif, sur le complément restant, améliorant significativement la tenue sur carre, le pop et la stabilité\n\nTransitions carre back-carre front toutes en douceur\nLe RadCut consiste en une combinaison unique de rayons de courbes positifs, ou classiques, et de rayons inversés, pour permettre au point de contact de la board avec la neige de se déplacer avec la vitesse du rider en temps réel et d'optimiser la trajectoire à tout moment. La board devient plus maniable à vitesse réduite et plus stable à vitesse élevée\n\nBon pop, excellente stabilité\nLe flex Twin All-Mountain est centré et symétrique. Il maximise le pop et l'accroche sous les pieds tout en améliorant la stabilité à vitesse élevée\n\nPuissance et stabilité en all-mountain\nFlex semi-rigide pour un mélange équilibré de puissance et de tolérance en all-mountain freestyle\n\nApproche développement durable\n100 % des noyaux bois des snowboard Rossignol proviennent de forêts exploitées de manières durables",
-    "photo1": "view/content/img/snow/salomon-GYPSY/"
+    "photo1": "view/content/img/snow/Rossignol-SPLITBOARD/Rossignol-SPLIT(1).png",
+    "photo2": "view/content/img/snow/Rossignol-SPLITBOARD/Rossignol-SPLIT(2).png"
   },
   {
     "marque": "Salomon",
@@ -15,16 +16,18 @@
     "price": "599.00",
     "description": "Pour une glisse sans fin",
     "description_grande": "Dotée d’une forme inspirée du freestyle, cette board destinée aux inconditionnelles du snowpark garantit un excellent contrôle, une grande maniabilité et un flex optimal. Avec son Rock Out Camber et son noyau Popster Booster, cette board super dynamique amortit les réceptions et absorbe les inégalités du terrain.",
-    "photo": "view/content/img/snow/salomon.png"
+    "photo1": "view/content/img/snow/salomon-GYPSY/Salomon-GYPSY(1).png",
+    "photo2": "view/content/img/snow/salomon-GYPSY/Salomon-GYPSY(2).png"
   },
   {
     "marque": "Head",
-    "model": "DAY LYT SNOWBOARD",
+    "model": "DAY LYT",
     "code": "330110",
     "price": "799.00",
     "description": "Pour une glisse de compétition",
     "description_grande": "Construite pour la neige profonde et les pentes raides, la DAY LYT est tout simplement inarrêtable dans la poudreuse. Comme son nom l'indique, nous avons rendu la planche super légère grâce à l'utilisation de l'Hexagonal Core. Avec son long nose qui génère de la portance, son pintail court et son set-back camber, cette board a tout pour séduire dans la neige fraîche et les lignes de big mountain. Elle est \"Split Ready\", car le stringer central en bambou donne, lorsque la planche est sciée, deux chants latéraux hydrofuges qui protègent le noyau de l'humidité.\n\nTraduit avec www.DeepL.com/Translator (version gratuite)",
-    "photo": "view/content/img/snow/head.jpg"
+    "photo1": "view/content/img/snow/head-DAY LYT/day-lyt.png",
+    "photo2": "view/content/img/snow/head-DAY LYT/day-lyt (2).jpg"
   },
   {
     "marque": "Salomon",
@@ -33,6 +36,7 @@
     "price": "399.00",
     "description": "Pour une glisse plaine d'amour",
     "description_grande": "Conçue pour tous les niveaux de performance en snowpark, des jibbers débutants aux pros comme Maddie Mastro. La No Drama est dotée d’un Quad Camber et d’un noyau Popster pour une détente maximale à l’amorce des sauts, des side hits et des murs de half-pipe, tandis que la ligne de cotes EQ Rad conserve le caractère ludique et tolérant de cette board dans les snowparks et sur les rails.",
-    "photo": "view/content/img/snow/salomon2.jpg"
+    "photo1": "view/content/img/snow/salomon-NO DRAMA/l41506300_fua4zvpq4lcc1hra-removebg-preview.png",
+    "photo2": "l41506300_16_gtuwhjehyki1shyk.png"
   }
 ]

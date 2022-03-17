@@ -14,15 +14,13 @@
                     <div class="single_image">
                         <ul id="etalage">
                             <li>
-                                <a href="optionallink.html">
-                                    <img class="img-responsive" src="<?=$detail['photo']; ?>" />
-                                </a>
+                                <img class="img-responsive" src="<?=$detail['photo1']; ?>" />
                             </li>
                         </ul>
                     </div>
                     <!-- end product_slider -->
                     <div class="single_right">
-                        <h3><?=$detail['marque']; ?> <?=$detail['model']; ?></h3>
+                        <h3><?=$detail['marque']; ?> <?=$detail['model']; ?> #<?=$detail['code']; ?></h3>
                         <p class="m_10"><?=$detail['description']; ?></p>
                         <div class="btn_form">
                             <form>
@@ -71,8 +69,9 @@
                 </div>
             </div>
             <div class="desc">
+                <br>
                 <h4>Description</h4>
-                <p><?=$detail['description']; ?></p>
+                <p><?=$detail['description_grande']; ?></p>
             </div>
         </div>
     </div>
