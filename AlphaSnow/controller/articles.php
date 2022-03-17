@@ -4,7 +4,7 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   11-MAR-2022
+     * @version   17-MAR-2022
      */
 
 

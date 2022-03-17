@@ -48,10 +48,3 @@
     function checkout(){
         require "view/checkout.php";
     }
-
-    /**
-     * @brief This function is designed to redirect the user to the single page
-     */
-    function single(){
-        require "view/single.php";
-    }

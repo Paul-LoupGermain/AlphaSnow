@@ -1,27 +1,31 @@
 [
   {
-    "model": "Rossignol",
+    "marque": "Rossignol",
+    "model": "T800",
     "code": "7648",
     "price": "399",
     "description": "Pour une glisse plus fraîche",
     "photo": "view/content/img/snow/rossignol.jpg"
   },
   {
-    "model": "Salomon",
+    "marque": "Salomon",
+    "model": "Slide",
     "code": "3622",
     "price": "599",
     "description": "Pour une glisse sans fin",
     "photo": "view/content/img/snow/salomon.png"
   },
   {
-    "model": "Head",
+    "marque": "Head",
+    "model": "Bluefire",
     "code": "4532",
     "price": "799",
     "description": "Pour une glisse de compétition",
     "photo": "view/content/img/snow/head.jpg"
   },
   {
-    "model": "Salomon",
+    "marque": "Salomon",
+    "model": "Heart",
     "code": "9852",
     "price": "299",
     "description": "Pour une glisse plaine d'amour",

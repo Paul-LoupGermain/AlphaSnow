@@ -1,36 +1,29 @@
 <?php
 
-ob_start();
-$title = "AlphaSnow . Single";
+    ob_start();
+    $title = "AlphaSnow - Shop";
 ?>
 <div class="main">
     <div class="shop_top">
         <div class="container">
             <div class="row">
+                <?php if(isset($article_error_message)) : ?>
+                    <h5><span style="color: #ff0000"><?=$article_error_message?></span></h5>
+                <?php endif; ?>
                 <div class="col-md-9 single_left">
                     <div class="single_image">
                         <ul id="etalage">
                             <li>
                                 <a href="optionallink.html">
-                                    <img class="img-responsive" src="view/content/images/3.jpg" />
-                                    <img class="img-responsive" src="view/content/images/3.jpg" />
+                                    <img class="img-responsive" src="<?=$detail['photo']; ?>" />
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <!-- end product_slider -->
                     <div class="single_right">
-                        <h3>hendrerit in vulputate velit </h3>
-                        <p class="m_10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
-                        <ul class="options">
-                            <h4 class="m_12">Select a Size(cm)</h4>
-                            <li><a href="#">151</a></li>
-                            <li><a href="#">148</a></li>
-                            <li><a href="#">156</a></li>
-                            <li><a href="#">145</a></li>
-                            <li><a href="#">162(w)</a></li>
-                            <li><a href="#">163</a></li>
-                        </ul>
+                        <h3><?=$detail['marque']; ?> <?=$detail['model']; ?></h3>
+                        <p class="m_10"><?=$detail['description']; ?></p>
                         <div class="btn_form">
                             <form>
                                 <input type="submit" value="buy now" title="">
@@ -59,7 +52,7 @@ $title = "AlphaSnow . Single";
                 </div>
                 <div class="col-md-3">
                     <div class="box-info-product">
-                        <p class="price2">$130.25</p>
+                        <p class="price2">CHF <?=$detail['price']; ?>.-</p>
                         <ul class="prosuct-qty">
                             <span>Quantity:</span>
                             <select>
@@ -86,5 +79,5 @@ $title = "AlphaSnow . Single";
 </div>
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";

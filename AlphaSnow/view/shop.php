@@ -1,9 +1,8 @@
 <?php
 
     ob_start();
-    $title = "AlphaSnow . Shop";
+    $title = "AlphaSnow - Shop";
 ?>
-
 
 <br>
 <br>
@@ -32,7 +31,7 @@
                     <span class="sale-label">Sale!</span>
                 </span>-->
                 <div class="shop_desc">
-                    <h3><?=$article['model']; ?></h3>
+                    <h3><?=$article['marque']; ?> <?=$article['model']; ?></h3>
                     <!--<span class="reducedfrom">$66.00</span>-->
                     <span class="actual"><?='CHF ' . $article['price'] . '.-' ; ?></span><br>
                     <ul class="buttons">
