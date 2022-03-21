@@ -12,11 +12,7 @@
                 <?php endif; ?>
                 <div class="col-md-9 single_left">
                     <div class="single_image">
-                        <ul id="etalage">
-                            <li>
-                                <img class="img-responsive" src="<?=$detail['photo1']; ?>" />
-                            </li>
-                        </ul>
+                        <img class="img-responsive" src="<?=$detail['photo1']; ?>" />
                     </div>
                     <!-- end product_slider -->
                     <div class="single_right">

@@ -5,7 +5,7 @@
      * @brief     This file is used to retrieve data from the json file for controller if the login matches the data
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   02-MAR-2022
+     * @version   21-MAR-2022
      */
 
     /**
@@ -45,6 +45,25 @@
     function extract_register($email_register, $password_register) {
         $email = $email_register;
         $password = $password_register;
-        $new_register_temp = array($email, $password);
+        $type = 0;
+        $new_register_temp = array($email, $password, $type);
         return $new_register_temp;
+    }
+
+    /**
+     * @brief .
+     * @param $email_verify
+     * @return mixed
+     */
+    function get_user_type($email_verify){
+        $file_content = file_get_contents('data/data_account.json');
+        $obj = json_decode($file_content,true);
+
+        foreach ($obj as $item) {
+            if ($email_verify == $item['email']){
+                $user_type = $item['user_type'];
+                break;
+            }
+        }
+        return $user_type;
     }

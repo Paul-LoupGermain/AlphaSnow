@@ -5,7 +5,7 @@
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   03-MAR-2022
+     * @version   21-MAR-2022
      */
 
     /**
@@ -32,6 +32,9 @@
             require_once "model/users_managment.php";
             if (is_login_correct($input_email_address, $input_password)){
                 $_SESSION['login_email']=$input_email_address;
+                if (get_user_type($input_email_address) == 1){
+                    $_SESSION['user_type']=1;
+                }
                 require "view/home.php";
             }else{
                 $login_error_message = "Erreur";

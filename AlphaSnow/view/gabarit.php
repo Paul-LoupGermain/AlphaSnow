@@ -71,6 +71,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <li><a href="../index.php?action=shop">Shop</a></li>
                                     <li><a href="../index.php?action=team">Team</a></li>
                                     <li><a href="../index.php?action=experience">Experience</a></li>
+                                    <?php if (isset($_SESSION['user_type'])) : ?>
+                                        <li>
+                                            <a href="../index.php?action=gestion">Gestion</a>
+                                        </li>
+                                    <?php endif;?>
                                     <li><a href="../index.php?action=contact">Contact</a></li>
                                     <li>
                                         <?php if (isset($_SESSION['login_email'])) : ?>

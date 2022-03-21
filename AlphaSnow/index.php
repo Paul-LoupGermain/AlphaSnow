@@ -4,13 +4,12 @@
      * @file      index.php
      * @brief     This file is the rooter managing the link with controllers.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   17-MAR-2022
+     * @version   21-MAR-2022
      */
 
     require "controller/navigation.php";
     require "controller/users.php";
     require "controller/articles.php";
-    require "controller/article_detail.php";
 
     session_start();
 
@@ -46,6 +45,9 @@
                 break;
             case 'single' :
                 display_article_detail($_GET);
+                break;
+            case 'gestion' :
+                articles_admin();
                 break;
             default :
                 lost();

@@ -18,7 +18,8 @@
         $json_load = json_decode($file, true);
         $encoded_register = array(
             "email" => $register_to_write['0'],
-            "password" => $register_to_write['1']
+            "password" => $register_to_write['1'],
+            "user_type" => $register_to_write['2']
         );
         array_push($json_load, $encoded_register);
         $json_upload = json_encode($json_load);
