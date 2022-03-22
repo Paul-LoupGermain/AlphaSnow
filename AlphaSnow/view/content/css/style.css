@@ -2,6 +2,12 @@
 	text-align: center;
 }
 
+.img_gestion{
+	display: block;
+	max-width: 15%;
+	height: auto;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;

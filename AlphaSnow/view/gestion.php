@@ -12,70 +12,37 @@
 ob_start();
 $title = "AlphaSnow - Gestion";
 ?>
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
 
+                <?php if(isset($article_error_message)) : ?>
+                    <h5><span style="color: #ff0000"><?=$article_error_message?></span></h5>
+                <?php else : ?>
+                    <?php foreach($articles as $article) :?>
 
-    <!-- Cart -->
-    <section class="cart bgwhite p-t-70 p-b-100">
-        <div class="container">
-            <!-- Cart item -->
-            <div class="container-table-cart pos-relative">
-                <div class="wrap-table-shopping-cart bgwhite">
-                    <table class="table-shopping-cart">
-                        <tr class="table-head">
-                            <th class="column-1"></th>
-                            <th class="column-2">Produit</th>
-                            <th class="column-3">Prix</th>
-                            <th class="column-4 p-l-70">Quantité</th>
-                            <th class="column-5"><a href="#" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-                                    Ajouter
-                                </a></th>
-                        </tr>
+                <div class="col-md-6">
+                    <div class="login-page">
+                        <img src="<?=$article['photo1']?>" class="img_gestion">
+                        <?=$article['marque']?> <?=$article['model']?>
+                        <div class="button1">
+                            <a href="../index.php?action=gestion_edit&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Modifier"></a>
+                            <a href="../index.php?action=gestion_delete&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Supprimer"></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
 
-                        <?php if(isset($article_error_message)) : ?>
-                            <h5><span style="color: #ff0000"><?=$article_error_message?></span></h5>
-                        <?php else : ?>
-                            <?php foreach($articles as $article) :?>
-                                <tr class="table-row">
-                                    <td class="column-1">
-                                        <div class="cart-img-product b-rad-4 o-f-hidden">
-                                            <img src="<?=$article['photo1']?>" alt="IMG-PRODUCT">
-                                        </div>
-                                    </td>
-                                    <td class="column-2"><?=$article['marque']; ?> <?=$article['model']; ?></td>
-                                    <td class="column-3"><?='CHF ' . $article['price'] . '.-' ; ?></td>
-                                    <td class="column-4">
-                                        <div class="flex-w bo5 of-hidden w-size17">
-                                            <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
-                                                <i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-                                            </button>
-
-                                            <input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="">
-
-                                            <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
-                                                <i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="column-5"><a href="#" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            <img src="view/content/images/icons/bin2.png" alt="delete">
-                                        </a>
-                                        <br>
-                                        <a href="#" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            <img src="view/content/images/icons/pencil2.png" alt="delete">
-                                        </a>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-
-                    </table>
+                <?php endforeach; ?>
+                <?php endif; ?>
+                <div class="button1">
+                    <a href="../index.php?action=gestion_add&code=NEW"><input type="submit" name="Submit" value="Ajouter"></a>
                 </div>
             </div>
-
-
-
         </div>
-    </section>
+    </div>
+
+
 
 <?php
 $content = ob_get_clean();
