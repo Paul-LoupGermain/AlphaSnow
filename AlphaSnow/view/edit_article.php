@@ -27,13 +27,28 @@ $title = "AlphaSnow - Gestion";
                                 <fieldset class="input">
                                     <p id="login-form-username">
                                         <label for="input_email">Marque</label>
-                                        <input value="<?= $detail['marque']; ?>" id="input_email" type="text"
+                                        <input value="<?= $detail['marque']; ?>" type="text"
                                                name="login_email" class="inputbox" size="18" autocomplete="off">
                                     </p>
                                     <p id="login-form-password">
                                         <label for="input_password">Model</label>
-                                        <input value="<?= $detail['model']; ?> type="text" name="login_password"
+                                        <input value="<?= $detail['model']; ?>" type="text" name="login_password"
                                         class="inputbox" size="18" autocomplete="off">
+                                    </p>
+                                    <p>
+                                        <label for="input_password">Price</label>
+                                        <input value="<?= $detail['price']; ?>" type="text" name="login_password"
+                                               class="inputbox" size="18" autocomplete="off">
+                                    </p>
+                                    <p>
+                                        <label for="input_password">Description</label>
+                                        <input value="<?= $detail['description']; ?>" type="text" name="login_password"
+                                               class="inputbox" size="18" autocomplete="off">
+                                    </p>
+                                    <p>
+                                        <label for="input_password">Grande Description</label>
+                                        <textarea value="<?= $detail['description_grande']; ?>" type="text" name="login_password"
+                                               class="inputbox" size="18" autocomplete="off">
                                     </p>
                                     <div class="remember">
                                         <input type="submit" name="Submit" class="button" value="Edit">
