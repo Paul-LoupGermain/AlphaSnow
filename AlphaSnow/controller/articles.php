@@ -57,3 +57,12 @@
         $delete = delete_article($info_delete);
         require "view/home.php";
     }
+
+
+function edit_article($info_edit){
+    require_once "model/articles_managment.php";
+    $detail = get_article_detail($info_edit);
+
+    require "view/edit_article.php";
+
+}
