@@ -47,8 +47,7 @@ $title = "AlphaSnow - Gestion";
                                     </p>
                                     <p>
                                         <label for="input_password">Grande Description</label>
-                                        <textarea value="<?= $detail['description_grande']; ?>" type="text" name="login_password"
-                                               class="inputbox" size="18" autocomplete="off">
+                                        <textarea value="<?= $detail['description_grande']; ?>">
                                     </p>
                                     <div class="remember">
                                         <input type="submit" name="Submit" class="button" value="Edit">
