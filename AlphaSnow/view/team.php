@@ -6,8 +6,8 @@ $title = "AlphaSnow . Team";
 <div class="main">
     <div class="shop_top">
         <div class="container">
+            <h3 class="m_2">Our Team</h3>
             <div class="row team_box">
-                <h3 class="m_2">Our Team</h3>
                 <div class="col-md-3 team1">
                     <a class="popup-with-zoom-anim" href="#small-dialog3"><img src="view/content/images/team1.jpg" class="img-responsive" title="continue" alt=""/></a>
                     <div id="small-dialog3" class="mfp-hide">

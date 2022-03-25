@@ -51,7 +51,7 @@
     }
 
     /**
-     * @brief .
+     * @brief This function will look if the usertype is equal to 1 compared to the email.
      * @param $email_verify
      * @return mixed
      */

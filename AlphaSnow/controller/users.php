@@ -5,7 +5,7 @@
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   21-MAR-2022
+     * @version   24-MAR-2022
      */
 
     /**
@@ -46,16 +46,10 @@
         }
     }
 
-
     /**
      * @brief This function is used to disconnect from the session.
      */
     function logout(){
-        /*
-        session_start();
-        unset($_SESSION["login_email"]);
-        header("Location:login.php");
-        */
         session_destroy(); //destroy the session
         header("location:/index.php"); //to redirect back to "index.php" after logging out
         exit();

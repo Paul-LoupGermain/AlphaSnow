@@ -46,7 +46,7 @@
      */
     function write_msg_in_file($file_full_path, $line_to_write, $erase) {
         $str_writer = null;
-        if($erase) {
+        if ($erase) {
             $str_writer = fopen($file_full_path, "w+");
         } else {
             $str_writer = fopen($file_full_path, "w+");

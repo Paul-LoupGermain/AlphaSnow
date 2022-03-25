@@ -6,8 +6,8 @@ $title = "AlphaSnow . Experiance";
 <div class="main">
     <div class="shop_top">
         <div class="container">
+            <h3 class="m_2">Our Experiance</h3>
             <div class="row ex_box">
-                <h3 class="m_2">Our Experiance</h3>
                 <div class="col-md-4 team1">
                     <div class="img_section magnifier2">
                         <a class="fancybox" href="view/content/images/e1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="view/content/images/e1.jpg" class="img-responsive" alt=""><span> </span>
