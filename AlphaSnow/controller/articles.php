@@ -49,3 +49,11 @@
             require "view/gestion.php";
         }
     }
+
+    function gestion_delete($info_delete){
+
+        require_once "model/articles_managment.php";
+        $delete = delete_article($info_delete);
+        require "view/home.php";
+
+    }

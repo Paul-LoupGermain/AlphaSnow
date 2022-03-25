@@ -58,3 +58,21 @@
         }
         return $article_detail;
     }
+
+    function delete_article($info_delete){
+        $obj = get_articles();
+        $indexObj = null;
+
+        foreach ($obj as $index=>$item) {
+            if ($info_delete['code'] == $item['code']){
+                $indexObj = $index;
+
+                break;
+            }
+        }
+
+        unset($obj[$indexObj]);
+
+        $obj = json_encode($obj);
+        file_put_contents('data/data_articles.json', $obj);
+    }

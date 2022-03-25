@@ -49,6 +49,9 @@
             case 'gestion' :
                 articles_admin();
                 break;
+            case 'gestion_delete' :
+                gestion_delete($_GET);
+                break;
             default :
                 lost();
         }
