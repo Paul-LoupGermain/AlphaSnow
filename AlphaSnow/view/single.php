@@ -27,7 +27,7 @@
                             <li><img src="view/content/images/wish.png" alt=""><a href="#">Add to wishlist</a></li>
                         </ul>
                         <div class="social_buttons">
-                            <h4>95 Items</h4>
+                            <!--<h4>95 Items</h4>-->
                             <button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
                                 <i class="icon-twitter"></i> Tweet
                             </button>
