@@ -1,12 +1,18 @@
+.imgarticle {
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
-.text_align{
+
+.text_align {
     text-align: center;
 }
 
-.edit_article{
+.edit_article {
     text-align: center;
     width: 100%;
 }
+
 .lost {
     text-align: center;
 }

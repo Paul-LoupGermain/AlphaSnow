@@ -20,17 +20,16 @@ $title = "AlphaSnow - Gestion";
                     <div class="col-md-6">
                     </div>
                     <div class="edit_article">
-                        <img width="100%" src="<?= $detail['photo1']; ?>">
+                        <img class="imgarticle" width="400px" height="400px" src="<?= $detail['photo1']; ?>">
                         <div class="login-title">
+                            <br>
                             <h4 "class="title">Article Edit</h4>
                             <div id="loginbox" class="loginbox">
                                 <form action="../index.php?action=login" method="post" name="login" id="login-form">
                                     <fieldset class="input">
                                         <p id="login-form-username">
                                             <label for="input_email">Marque</label>
-                                            <input class="edit_article" value="<?= $detail['marque']; ?>" type="text"
-                                                   name="login_email"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                            <input class="edit_article" value="<?= $detail['marque']; ?>" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p id="login-form-password">
                                             <label for="input_password">Model</label>
@@ -54,8 +53,9 @@ $title = "AlphaSnow - Gestion";
 
                                         </p>
                                         <div class="remember">
-                                            <input type="submit" name="Submit" class="button" value="Edit">
+                                            <a href="index.php?action=home"><input type="submit" name="Edit" class="button" value="Edit"></a>
                                             <div class="clear"></div>
+
                                         </div>
                                     </fieldset>
                                 </form>
