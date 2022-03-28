@@ -66,3 +66,9 @@ function edit_article($info_edit){
     require "view/edit_article.php";
 
 }
+
+function add_article(){
+    require_once "model/articles_managment.php";
+    require "view/add_article.php";
+
+}

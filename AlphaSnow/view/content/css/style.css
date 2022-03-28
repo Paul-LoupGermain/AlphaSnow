@@ -1,8 +1,9 @@
+
+
 .imgarticle {
     margin-left: 25%;
     margin-right: 25%;
 }
-
 
 .text_align {
     text-align: center;
@@ -15,6 +16,11 @@
 
 .lost {
     text-align: center;
+}
+
+.textdesciption {
+    width: 1000px;
+    height: 500px;
 }
 
 .img_gestion {

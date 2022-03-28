@@ -36,7 +36,7 @@ $title = "AlphaSnow - Gestion";
                 <?php endforeach; ?>
                 <?php endif; ?>
                 <div class="button1">
-                    <a href="../index.php?action=gestion_add&code=NEW"><input type="submit" name="Submit" value="Ajouter"></a>
+                    <a href="../index.php?action=add_article"><input type="submit" name="Submit" value="Add"></a>
                 </div>
             </div>
         </div>

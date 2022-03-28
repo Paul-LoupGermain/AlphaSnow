@@ -55,6 +55,8 @@ if (isset($_GET['action'])) {
         case 'edit_article' :
             edit_article($_GET);
             break;
+        case 'add_article' :
+            add_article();
         default :
             lost();
     }

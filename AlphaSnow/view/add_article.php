@@ -8,7 +8,7 @@
  */
 
 ob_start();
-$title = "AlphaSnow - Gestion";
+$title = "AlphaSnow - add_article";
 ?>
 <?php if (isset($article_error_message)) : ?>
     <h5><span style="color: #ff0000"><?= $article_error_message ?></span></h5>
@@ -20,7 +20,7 @@ $title = "AlphaSnow - Gestion";
                     <div class="col-md-6">
                     </div>
                     <div class="edit_article">
-                        <img class="imgarticle" width="400px" height="400px" src="<?= $detail['photo1']; ?>">
+                        <img class="imgarticle" width="400px" height="400px" src="content/images/noimage.png">
                         <div class="login-title">
                             <br>
                             <h4 "class="title">Article Edit</h4>
@@ -29,31 +29,29 @@ $title = "AlphaSnow - Gestion";
                                     <fieldset class="input">
                                         <p id="login-form-username">
                                             <label for="input_email">Marque</label>
-                                            <input class="edit_article" value="<?= $detail['marque']; ?>" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
+                                            <input class="edit_article" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p id="login-form-password">
                                             <label for="input_password">Model</label>
-                                            <input value="<?= $detail['model']; ?>" type="text" name="login_password"
+                                            <input  type="text" name="login_password"
                                                    class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Price</label>
-                                            <input value="<?= $detail['price']; ?>" type="text" name="login_password"
+                                            <input  type="text" name="login_password"
                                                    class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Description</label>
-                                            <input value="<?= $detail['description']; ?>" type="text"
-                                                   name="login_password"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                            <input  type="text" name="login_password" class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Grande Description</label>
-                                            <textarea class="textdesciption"><?= $detail['description_grande']; ?></textarea>
+                                            <textarea class="textdesciption"></textarea>
 
                                         </p>
                                         <div class="remember">
-                                            <a href="index.php?action=home"><input type="submit" name="Edit" class="button" value="Edit"></a>
+                                            <a href="index.php?action=home"><input type="submit" name="Add" class="button" value="Add"></a>
                                             <div class="clear"></div>
 
                                         </div>
