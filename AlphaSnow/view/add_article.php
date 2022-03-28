@@ -23,27 +23,27 @@ $title = "AlphaSnow - add_article";
                         <img class="imgarticle" width="400px" height="400px" src="content/images/noimage.png">
                         <div class="login-title">
                             <br>
-                            <h4 "class="title">Article Edit</h4>
+                            <h4 class="title">Add Article</h4>
                             <div id="loginbox" class="loginbox">
-                                <form action="../index.php?action=login" method="post" name="login" id="login-form">
+                                <form action="../index.php?action=login" method="post" name="add" id="login-form">
                                     <fieldset class="input">
                                         <p id="login-form-username">
                                             <label for="input_email">Marque</label>
-                                            <input class="edit_article" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
+                                            <input class="edit_article inputbox" type="text" size="18" autocomplete="off">
                                         </p>
                                         <p id="login-form-password">
                                             <label for="input_password">Model</label>
-                                            <input  type="text" name="login_password"
+                                            <input  type="text"
                                                    class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Price</label>
-                                            <input  type="text" name="login_password"
+                                            <input  type="text"
                                                    class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Description</label>
-                                            <input  type="text" name="login_password" class="inputbox" size="18" autocomplete="off">
+                                            <input  type="text" class="inputbox" size="18" autocomplete="off">
                                         </p>
                                         <p>
                                             <label for="input_password">Grande Description</label>
@@ -51,7 +51,7 @@ $title = "AlphaSnow - add_article";
 
                                         </p>
                                         <div class="remember">
-                                            <a href="index.php?action=home"><input type="submit" name="Add" class="button" value="Add"></a>
+                                            <a href="../index.php?action=home"><input type="submit" name="Add" class="button" value="Add"></a>
                                             <div class="clear"></div>
 
                                         </div>

@@ -4,7 +4,7 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   25-MAR-2022
+     * @version   28-MAR-2022
      */
 
 
@@ -59,16 +59,21 @@
     }
 
 
-function edit_article($info_edit){
-    require_once "model/articles_managment.php";
-    $detail = get_article_detail($info_edit);
+    /**
+     * @brief This function calls the model according to the code to edit a product.
+     * @param $info_edit
+     */
+    function edit_article($info_edit){
+        require_once "model/articles_managment.php";
+        $detail = get_article_detail($info_edit);
+        require "view/edit_article.php";
+    }
 
-    require "view/edit_article.php";
 
-}
-
-function add_article(){
-    require_once "model/articles_managment.php";
-    require "view/add_article.php";
-
-}
+    /**
+     * @brief This function calls the model according to the code to add a product.
+     */
+    function add_article(){
+        require_once "model/articles_managment.php";
+        require "view/add_article.php";
+    }

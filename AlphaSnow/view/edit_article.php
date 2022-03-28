@@ -25,11 +25,11 @@ $title = "AlphaSnow - Gestion";
                             <br>
                             <h4 "class="title">Article Edit</h4>
                             <div id="loginbox" class="loginbox">
-                                <form action="../index.php?action=login" method="post" name="login" id="login-form">
+                                <form action="../index.php?action=login" method="post" name="edit" id="login-form">
                                     <fieldset class="input">
                                         <p id="login-form-username">
                                             <label for="input_email">Marque</label>
-                                            <input class="edit_article" value="<?= $detail['marque']; ?>" type="text" name="login_email" class="inputbox" size="18" autocomplete="off">
+                                            <input class="edit_article inputbox" value="<?= $detail['marque']; ?>" type="text" name="login_email" size="18" autocomplete="off">
                                         </p>
                                         <p id="login-form-password">
                                             <label for="input_password">Model</label>
