@@ -71,9 +71,14 @@
 
 
     /**
-     * @brief This function calls the model according to the code to add a product.
+     * @brief This function checks if the user has filled in the register form fields correctly.
+     * @param $array_of_article_inputs
      */
-    function add_article(){
-        require_once "model/articles_managment.php";
-        require "view/add_article.php";
+    function add_article($array_of_article_inputs){
+        if ((isset($array_of_article_inputs['add_article-marque'])) && (isset($array_of_article_inputs['add_article-model'])) && (isset($array_of_article_inputs['add_article-price'])) && (isset($array_of_article_inputs['add_article-description'])) && (isset($array_of_article_inputs['add_article-grande_description'])) && (isset($array_of_article_inputs['add_article-photo1']))) {
+            require_once "model/articles_managment.php";
+            save_article($array_of_article_inputs);
+        }else{
+            require "view/add_article.php";
+        }
     }

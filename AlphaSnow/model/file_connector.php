@@ -5,8 +5,31 @@
      * @brief     This file is used to write the data to the json file
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update by Paul-Loup GERMAIN
-     * @version   03-MAR-2022
+     * @version   30-MAR-2022
      */
+
+    /**
+     * @brief This function decode the json file into a "json_load" and add the new array into a "json_upload".
+     * @param $article_to_write
+     */
+    function write_article_in_json($article_to_write) {
+        $path_to_json_file = set_full_path("/data/data_articles.json");
+        $file = file_get_contents(set_full_path("/data/data_articles.json"));
+        $json_load = json_decode($file, true);
+        $encoded_register = array(
+            "marque" => $article_to_write['0'],
+            "model" => $article_to_write['1'],
+            "code" => $article_to_write['2'],
+            "price" => $article_to_write['3'],
+            "description" => $article_to_write['4'],
+            "description_grande" => $article_to_write['5'],
+            "photo1" => $article_to_write['6']
+        );
+        array_push($json_load, $encoded_register);
+        $json_upload = json_encode($json_load);
+        file_put_contents("../data/data_articles.json", $json_upload);
+        write_msg_in_file($path_to_json_file, $json_upload, false);
+    }
 
     /**
      * @brief This function decode the json file into a "json_load" and add the new array into a "json_upload".

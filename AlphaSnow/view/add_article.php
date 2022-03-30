@@ -25,36 +25,34 @@ $title = "AlphaSnow - add_article";
                             <br>
                             <h4 class="title">Add Article</h4>
                             <div id="loginbox" class="loginbox">
-                                <form action="../index.php?action=login" method="post" name="add" id="login-form">
+                                <form action="../index.php?action=add_article" method="post" name="add" id="login-form">
                                     <fieldset class="input">
                                         <p id="login-form-username">
-                                            <label for="input_email">Marque</label>
-                                            <input class="edit_article inputbox" type="text" size="18" autocomplete="off">
+                                            <label for="marque">Marque</label>
+                                            <input type="text" class="form-control" id="marque" name="add_article-marque" aria-describedby="marqueHelp" placeholder="Marque" required>
                                         </p>
-                                        <p id="login-form-password">
-                                            <label for="input_password">Model</label>
-                                            <input  type="text"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="model">Model</label>
+                                            <input type="text" class="form-control" id="model" name="add_article-model" aria-describedby="modelHelp" placeholder="Model" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Price</label>
-                                            <input  type="text"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="price">Price</label>
+                                            <input type="text" class="form-control" id="price" name="add_article-price" aria-describedby="priceHelp" placeholder="Price" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Description</label>
-                                            <input  type="text" class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="description">Description</label>
+                                            <input type="text" class="form-control" id="description" name="add_article-description" aria-describedby="descriptionHelp" placeholder="Description" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Grande Description</label>
-                                            <textarea class="textdesciption"></textarea>
+                                        <p id="login-form-username">
+                                            <label for="grande_description">Grande Description</label>
+                                            <input type="text" class="form-control" id="grande_description" name="add_article-grande_description" aria-describedby="grande_descriptionHelp" placeholder="Description" required>
+                                        </p>
+                                        <p id="login-form-username">
+                                            <label for="photo1">photo1</label>
+                                            <input type="text" class="form-control" id="photo1" name="add_article-photo1" aria-describedby="photo1Help" placeholder="view/content/img/snow/" required>
+                                        </p>
 
-                                        </p>
-                                        <div class="remember">
-                                            <a href="../index.php?action=home"><input type="submit" name="Add" class="button" value="Add"></a>
-                                            <div class="clear"></div>
-
-                                        </div>
+                                        <input type="submit" value="ADD">
                                     </fieldset>
                                 </form>
                             </div>
