@@ -3,10 +3,9 @@
 
 /**
  * @file      gestion.php
- * @brief     This view is designed to display the articles managment page
- * @author    Created by Pascal.BENZONANA
- * @author    Updated by Nicolas.GLASSEY
- * @version   13-APR-2020
+ * @brief     This view is designed to edit product
+ * @author    Mathias Bourqui
+ * @version   28-MAR-2022
  */
 
 ob_start();
