@@ -10,18 +10,18 @@ $title = "AlphaSnow . Contact";
             <div class="row">
                 <div class="col-md-7">
                     <div class="map">
-                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
+                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.118854871473!2d6.498011115858474!3d46.82166054986135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478db876b925cce3%3A0xc43383adf22945c2!2sCPNV%2C%20Centre%20professionnel%20du%20Nord%20vaudois!5e0!3m2!1sfr!2sch!4v1648712092685!5m2!1sfr!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  style="color:#666;text-align:left;font-size:12px"></a></small></iframe>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <p class="m_8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+                    <p class="m_8">Nous avons aussi une boutique physique. Vous pouvez venir si vous souhaitez réparer votre Snow, essayer des articles ou demander des conseilles et de l'aides à nos employer. Nous serons très heureux de vous retrouver la-bas.</p>
                     <div class="address">
-                        <p>500 Lorem Ipsum Dolor Sit,</p>
-                        <p>22-56-2-9 Sit Amet, Lorem,</p>
-                        <p>USA</p>
-                        <p>Phone:(00) 222 666 444</p>
-                        <p>Fax: (000) 000 00 00 0</p>
-                        <p>Email: <span>support[at]snow.com</span></p>
+                        <p></p>
+                        <p>Av. de la Gare 14, 1450 Sainte-Croix</p>
+                        <p>SWISS</p>
+                        <p>Phone:(+41) 79 320 47 29</p>
+                        <p>Fax: (+41) 21 825 13 59</p>
+                        <p>Email: <span>contact@alphasnow.ch</span></p>
                         <p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
                     </div>
                 </div>
