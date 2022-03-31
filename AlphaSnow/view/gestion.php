@@ -25,8 +25,8 @@ $title = "AlphaSnow - Gestion";
                         <img src="<?=$article['photo1']?>" class="img_gestion">
                         <?=$article['marque']?> <?=$article['model']?> #<?=$article['code']?>
                         <div class="button1">
-                            <a href="../index.php?action=edit_article&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Modifier"></a>
-                            <a href="../index.php?action=gestion_delete&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Supprimer"></a>
+                            <a href="../index.php?action=edit_article&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Edit"></a>
+                            <a href="../index.php?action=gestion_delete&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Delete"></a>
                         </div>
                         <div class="clear"></div>
                     </div>

@@ -51,7 +51,7 @@ $title = "AlphaSnow - Gestion";
                                             <input type="text" class="form-control" value="<?= $detail['photo1']; ?>" id="photo1" name="edit_article-photo1" aria-describedby="photo1Help" required>
                                         </p>
 
-                                        <input type="submit" value="ADD">
+                                        <input type="submit" value="Edit">
                                     </fieldset>
                                 </form>
                             </div>

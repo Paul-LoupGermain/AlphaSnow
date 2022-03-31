@@ -25,7 +25,7 @@
                         <!-- Text title -->
                         <h1 class="title">Run Over<br>Everything</h1>
                         <!-- /Text title -->
-                        <div class="button"><a href="../index.php?action=experience">See Details</a></div>
+                        <div class="button"><a href="index.php?action=experience">See Details</a></div>
                     </div>
                 </div>
                 <!-- /Texts container -->
