@@ -4,7 +4,7 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   30-MAR-2022
+     * @version   31-MAR-2022
      */
 
     /**
@@ -33,7 +33,6 @@
         $description = Null;
         $description_grande = Null;
         $photo1 = Null;
-        $photo2 = Null;
 
         foreach ($obj as $item) {
             if ($info['code'] == $item['code']){
@@ -44,7 +43,6 @@
                 $description = $item['description'];
                 $description_grande = $item['description_grande'];
                 $photo1 = $item['photo1'];
-                $photo2 = $item['photo2'];
 
                 $article_detail = array(
                     'marque' => $marque,
@@ -53,8 +51,7 @@
                     'price' => $price,
                     'description' => $description,
                     'description_grande' => $description_grande,
-                    'photo1' => $photo1,
-                    'photo2' => $photo2
+                    'photo1' => $photo1
                 );
                 break;
             }
@@ -97,7 +94,7 @@
     }
 
     /**
-     * @brief @brief This function is used to extract the data.
+     * @brief This function is used to extract the data.
      * @param $add_article
      * @return array
      */
@@ -113,4 +110,33 @@
         $type = 0;
         $new_article_temp = array($marque, $model, $code, $price, $description, $description_grande, $photo1, $type);
         return $new_article_temp;
+    }
+
+
+    /**
+     * @brief This function is used to edit the data.
+     * @param $info_edit
+     * @param $array_of_edit_article_inputs
+     */
+    function save_edit_article($info_edit, $array_of_edit_article_inputs){
+        $obj = get_articles();
+        $indexObj = null;
+
+        foreach ($obj as $index=>$item) {
+            if ($info_edit['code'] == $item['code']){
+                $indexObj = $index;
+                break;
+            }
+        }
+
+        $obj[$indexObj]['marque'] = $array_of_edit_article_inputs['edit_article-marque'];
+        $obj[$indexObj]['model'] = $array_of_edit_article_inputs['edit_article-model'];
+        $obj[$indexObj]['price'] = $array_of_edit_article_inputs['edit_article-price'];
+        $obj[$indexObj]['description'] = $array_of_edit_article_inputs['edit_article-description'];
+        $obj[$indexObj]['grande_description'] = $array_of_edit_article_inputs['edit_article-grande_description'];
+        $obj[$indexObj]['photo1'] = $array_of_edit_article_inputs['edit_article-photo1'];
+
+        $obj = json_encode($obj);
+        file_put_contents('data/data_articles.json', $obj);
+        require "view/home.php";
     }

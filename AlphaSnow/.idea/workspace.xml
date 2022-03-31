@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/articles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_articles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/add_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/add_article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/articles_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/articles_managment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/file_connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/file_connector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/edit_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/edit_article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/gestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gestion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="03f1e169-3325-4e86-a79a-3e08200df69f" name="localhost" port="8081" />
@@ -124,6 +126,11 @@
       <workItem from="1648460947310" duration="731000" />
       <workItem from="1648620431972" duration="3171000" />
       <workItem from="1648623676463" duration="1263000" />
+      <workItem from="1648625345435" duration="993000" />
+      <workItem from="1648643973290" duration="680000" />
+      <workItem from="1648644835680" duration="2401000" />
+      <workItem from="1648648022492" duration="3000" />
+      <workItem from="1648706702751" duration="3504000" />
     </task>
     <servers />
   </component>

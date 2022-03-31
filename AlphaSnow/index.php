@@ -4,7 +4,7 @@
      * @file      index.php
      * @brief     This file is the rooter managing the link with controllers.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   30-MAR-2022
+     * @version   31-MAR-2022
      */
 
     require "controller/navigation.php";
@@ -53,7 +53,7 @@
                 gestion_delete($_GET);
                 break;
             case 'edit_article' :
-                edit_article($_GET);
+                edit_article($_GET, $_POST);
                 break;
             case 'add_article' :
                 add_article($_POST);

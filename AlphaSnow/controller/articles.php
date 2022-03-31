@@ -4,7 +4,7 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   28-MAR-2022
+     * @version   31-MAR-2022
      */
 
 
@@ -58,17 +58,19 @@
         require "view/home.php";
     }
 
-
     /**
      * @brief This function calls the model according to the code to edit a product.
      * @param $info_edit
      */
-    function edit_article($info_edit){
+    function edit_article($info_edit, $array_of_edit_article_inputs){
         require_once "model/articles_managment.php";
         $detail = get_article_detail($info_edit);
-        require "view/edit_article.php";
+        if ((isset($array_of_edit_article_inputs['edit_article-marque'])) && (isset($array_of_edit_article_inputs['edit_article-model'])) && (isset($array_of_edit_article_inputs['edit_article-price'])) && (isset($array_of_edit_article_inputs['edit_article-description'])) && (isset($array_of_edit_article_inputs['edit_article-grande_description'])) && (isset($array_of_edit_article_inputs['edit_article-photo1']))) {
+            save_edit_article($info_edit, $array_of_edit_article_inputs);
+        }else{
+            require "view/edit_article.php";
+        }
     }
-
 
     /**
      * @brief This function checks if the user has filled in the register form fields correctly.

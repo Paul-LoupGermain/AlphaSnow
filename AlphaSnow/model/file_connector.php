@@ -13,8 +13,8 @@
      * @param $article_to_write
      */
     function write_article_in_json($article_to_write) {
-        $path_to_json_file = set_full_path("/data/data_articles.json");
-        $file = file_get_contents(set_full_path("/data/data_articles.json"));
+        $path_to_json_file = "data/data_articles.json";
+        $file = file_get_contents("data/data_articles.json");
         $json_load = json_decode($file, true);
         $encoded_register = array(
             "marque" => $article_to_write['0'],
@@ -27,7 +27,7 @@
         );
         array_push($json_load, $encoded_register);
         $json_upload = json_encode($json_load);
-        file_put_contents("../data/data_articles.json", $json_upload);
+        file_put_contents("data/data_articles.json", $json_upload);
         write_msg_in_file($path_to_json_file, $json_upload, false);
     }
 
@@ -36,8 +36,8 @@
      * @param $register_to_write
      */
     function write_register_in_json($register_to_write) {
-        $path_to_json_file = set_full_path("/data/data_account.json");
-        $file = file_get_contents(set_full_path("/data/data_account.json"));
+        $path_to_json_file = "data/data_account.json";
+        $file = file_get_contents("data/data_account.json");
         $json_load = json_decode($file, true);
         $encoded_register = array(
             "email" => $register_to_write['0'],
@@ -46,7 +46,7 @@
         );
         array_push($json_load, $encoded_register);
         $json_upload = json_encode($json_load);
-        file_put_contents("../data/data_account.json", $json_upload);
+        file_put_contents("data/data_account.json", $json_upload);
         write_msg_in_file($path_to_json_file, $json_upload, false);
     }
 

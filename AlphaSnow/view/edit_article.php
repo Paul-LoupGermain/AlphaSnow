@@ -24,38 +24,34 @@ $title = "AlphaSnow - Gestion";
                             <br>
                             <h4 "class="title">Article Edit</h4>
                             <div id="loginbox" class="loginbox">
-                                <form action="../index.php?action=login" method="post" name="edit" id="login-form">
+                                <form action="../index.php?action=edit_article&code=<?=$_GET['code']?>" method="post" name="edit" id="login-form">
                                     <fieldset class="input">
                                         <p id="login-form-username">
-                                            <label for="input_email">Marque</label>
-                                            <input class="edit_article inputbox" value="<?= $detail['marque']; ?>" type="text" name="login_email" size="18" autocomplete="off">
+                                            <label for="marque">Marque</label>
+                                            <input type="text" class="form-control" value="<?= $detail['marque']; ?>" id="marque" name="edit_article-marque" aria-describedby="marqueHelp" required>
                                         </p>
-                                        <p id="login-form-password">
-                                            <label for="input_password">Model</label>
-                                            <input value="<?= $detail['model']; ?>" type="text" name="login_password"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="model">Model</label>
+                                            <input type="text" class="form-control" value="<?= $detail['model']; ?>" id="model" name="edit_article-model" aria-describedby="modelHelp" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Price</label>
-                                            <input value="<?= $detail['price']; ?>" type="text" name="login_password"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="price">Price</label>
+                                            <input type="text" class="form-control" value="<?= $detail['price']; ?>" id="price" name="edit_article-price" aria-describedby="priceHelp" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Description</label>
-                                            <input value="<?= $detail['description']; ?>" type="text"
-                                                   name="login_password"
-                                                   class="inputbox" size="18" autocomplete="off">
+                                        <p id="login-form-username">
+                                            <label for="description">Description</label>
+                                            <input type="text" class="form-control" value="<?= $detail['description']; ?>" id="description" name="edit_article-description" aria-describedby="descriptionHelp" required>
                                         </p>
-                                        <p>
-                                            <label for="input_password">Grande Description</label>
-                                            <textarea class="textdesciption"><?= $detail['description_grande']; ?></textarea>
+                                        <p id="login-form-username">
+                                            <label for="grande_description">Grande Description</label>
+                                            <input type="text" class="form-control" value="<?= $detail['description_grande']; ?>" id="grande_description" name="edit_article-grande_description" aria-describedby="grande_descriptionHelp" required>
+                                        </p>
+                                        <p id="login-form-username">
+                                            <label for="photo1">photo1</label>
+                                            <input type="text" class="form-control" value="<?= $detail['photo1']; ?>" id="photo1" name="edit_article-photo1" aria-describedby="photo1Help" required>
+                                        </p>
 
-                                        </p>
-                                        <div class="remember">
-                                            <a href="index.php?action=home"><input type="submit" name="Edit" class="button" value="Edit"></a>
-                                            <div class="clear"></div>
-
-                                        </div>
+                                        <input type="submit" value="ADD">
                                     </fieldset>
                                 </form>
                             </div>
