@@ -124,12 +124,12 @@ $title = "AlphaSnow - Home";
                             <div class="mask mask-1"></div>
                             <div class="mask mask-2"></div>
                             <div class="content">
-                                <h2>Réparation Snow</h2>
-                                <p>Réparer votre matériele de Snow</p>
+                                <h2>Snow repair</h2>
+                                <p>Repair your Snow equipment</p>
                             </div>
                         </a></div
                 </div>
-                <h4 class="m_4"><a href="#">Réparation Snow</a></h4>
+                <h4 class="m_4"><a href="#">Snow repair</a></h4>
             </div>
             <div class="col-md-3 top_box">
                 <div class="view view-ninth"><a href="#">
@@ -137,11 +137,11 @@ $title = "AlphaSnow - Home";
                         <div class="mask mask-1"></div>
                         <div class="mask mask-2"></div>
                         <div class="content">
-                            <h2>Hors Piste</h2>
-                            <p>Découvrerte Hors Piste</p>
+                            <h2>Off-Road</h2>
+                            <p>discovery Off-Road</p>
                         </div>
                     </a></div>
-                <h4 class="m_4"><a href="#">Hors Piste</a></h4>
+                <h4 class="m_4"><a href="#">Off-Road</a></h4>
             </div>
             <div class="col-md-3 top_box">
                 <div class="view view-ninth"><a href="#">
@@ -150,7 +150,7 @@ $title = "AlphaSnow - Home";
                         <div class="mask mask-2"></div>
                         <div class="content">
                             <h2>Snow Freestyle</h2>
-                            <p>Découvrer notre Snow Park</p>
+                            <p>Discover our Snow Park</p>
                         </div>
                     </a></div>
                 <h4 class="m_4"><a href="#">Snow Freestyle</a></h4>
@@ -161,11 +161,11 @@ $title = "AlphaSnow - Home";
                         <div class="mask mask-1"></div>
                         <div class="mask mask-2"></div>
                         <div class="content">
-                            <h2>Sortie Snow</h2>
-                            <p>Sortie Snow le 12 Avril.</p>
+                            <h2>Snow output</h2>
+                            <p>Snow release on April 12th.</p>
                         </div>
                     </a></div>
-                <h4 class="m_4"><a href="#">Sortie Snow</a></h4>
+                <h4 class="m_4"><a href="#">Snow output</a></h4>
             </div>
         </div>
     </div>

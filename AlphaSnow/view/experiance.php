@@ -10,7 +10,7 @@ $title = "AlphaSnow . Experiance";
                 <div class="row ex_box">
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e1.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e1.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">
@@ -20,7 +20,7 @@ $title = "AlphaSnow . Experiance";
                     </div>
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e2.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e2.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">
@@ -30,7 +30,7 @@ $title = "AlphaSnow . Experiance";
                     </div>
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e3.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e3.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">
@@ -42,7 +42,7 @@ $title = "AlphaSnow . Experiance";
                 <div class="row ex_box">
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e4.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e4.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">
@@ -52,7 +52,7 @@ $title = "AlphaSnow . Experiance";
                     </div>
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e5.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e5.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">
@@ -62,7 +62,7 @@ $title = "AlphaSnow . Experiance";
                     </div>
                     <div class="col-md-4 team1">
                         <div class="img_section magnifier2">
-                            <a class="fancybox" href="view/content/images/e6.jpg" data-fancybox-group="gallery"
+                            <a class="fancybox" href="#" data-fancybox-group="gallery"
                                title="Lorem ipsum dolor sit amet"><img src="view/content/images/e6.jpg"
                                                                        class="img-responsive" alt=""><span> </span>
                                 <div class="img_section_txt">

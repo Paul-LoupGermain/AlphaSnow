@@ -1,4 +1,12 @@
+.imgtitle {
+    url(content/images/home_title.jpg)
+}
 
+
+.home_title {
+    text-align: center;
+    font-weight: bold;
+}
 
 .imgarticle {
     margin-left: 25%;
