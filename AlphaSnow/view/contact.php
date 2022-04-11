@@ -34,7 +34,7 @@ $title = "AlphaSnow . Contact";
             </div>
             <div class="row">
                 <div class="col-md-12 contact">
-                    <form method="post" action="contact-post.html">
+                    <form method="post" action="#">
                         <div class="to">
                             <input type="text" class="text" value="Name" onfocus="this.value = '';"
                                    onblur="if (this.value == '') {this.value = 'Name';}">
@@ -47,7 +47,7 @@ $title = "AlphaSnow . Contact";
                             <textarea value="Message:" onfocus="this.value = '';"
                                       onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
                             <div class="form-submit">
-                                <input name="submit" type="submit" id="submit" value="Submit"><br>
+                                <input name="submit" type="submit" id="submit" href="#" value="Submit"><br>
                             </div>
                         </div>
                         <div class="clear"></div>

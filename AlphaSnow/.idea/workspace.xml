@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_backup.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/content/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/images/team4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/experiance.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/experiance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-NO DRAMA/l41506300_fua4zvpq4lcc1hra-removebg-preview.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../I-CT-151" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -136,6 +132,7 @@
       <workItem from="1648714156944" duration="264000" />
       <workItem from="1648812939107" duration="4579000" />
       <workItem from="1648821669885" duration="2773000" />
+      <workItem from="1649418066725" duration="876000" />
     </task>
     <servers />
   </component>
