@@ -9,72 +9,54 @@
      */
 
     /**
-     * @brief This function decode the json file into a "json_load" and add the new array into a "json_upload".
-     * @param $article_to_write
+     * @param $query
+     * @return null
      */
-    function write_article_in_json($article_to_write) {
-        $path_to_json_file = "data/data_articles.json";
-        $file = file_get_contents("data/data_articles.json");
-        $json_load = json_decode($file, true);
-        $encoded_register = array(
-            "marque" => $article_to_write['0'],
-            "model" => $article_to_write['1'],
-            "code" => $article_to_write['2'],
-            "price" => $article_to_write['3'],
-            "description" => $article_to_write['4'],
-            "description_grande" => $article_to_write['5'],
-            "photo1" => $article_to_write['6']
-        );
-        array_push($json_load, $encoded_register);
-        $json_upload = json_encode($json_load);
-        file_put_contents("data/data_articles.json", $json_upload);
-        write_msg_in_file($path_to_json_file, $json_upload, false);
-    }
+    function executeQuerySelect($query) {
+        $queryResult = null;
 
-    /**
-     * @brief This function decode the json file into a "json_load" and add the new array into a "json_upload".
-     * @param $register_to_write
-     */
-    function write_register_in_json($register_to_write) {
-        $path_to_json_file = "data/data_account.json";
-        $file = file_get_contents("data/data_account.json");
-        $json_load = json_decode($file, true);
-        $encoded_register = array(
-            "email" => $register_to_write['0'],
-            "password" => $register_to_write['1'],
-            "user_type" => $register_to_write['2']
-        );
-        array_push($json_load, $encoded_register);
-        $json_upload = json_encode($json_load);
-        file_put_contents("data/data_account.json", $json_upload);
-        write_msg_in_file($path_to_json_file, $json_upload, false);
-    }
-
-    /**
-     * @brief This function is used to return the path of the json file.
-     * @param $f_name
-     * @return string
-     */
-    function set_full_path($f_name) {
-        $current_path = getcwd();
-        $full_path_to_file = $current_path . "\\" . $f_name;
-        return $full_path_to_file;
-    }
-
-    /**
-     * @brief This function is used to write the arrays in the json file.
-     * @param $file_full_path
-     * @param $line_to_write
-     * @param $erase
-     */
-    function write_msg_in_file($file_full_path, $line_to_write, $erase) {
-        $str_writer = null;
-        if ($erase) {
-            $str_writer = fopen($file_full_path, "w+");
-        } else {
-            $str_writer = fopen($file_full_path, "w+");
-            $line_to_write = $line_to_write;
+        $dbConnection = openDBConnection();
+        if ($dbConnection != null) {
+            $statment = $dbConnection->prepare($query);
+            $statment->execute();
+            $queryResult = $statment->fetchall();
         }
-        fwrite($str_writer, $line_to_write  . "\r\n");
-        fclose($str_writer);
+        $dbConnection = null;
+        return $queryResult;
+    }
+
+    function executeQueryInsert($query)
+    {
+        $dbConnection = openDBConnection();
+
+        if ($dbConnection !=null)
+        {
+            $statement=$dbConnection->prepare($query); //Query prepare
+            $statement->execute(); // Execute query
+        }
+        $dbConnection = null; //Close connection
+    }
+
+
+    function openDBConnection(){
+        $tempDBConnection = null;
+        $sqlDrivers='mysql';
+        $hostname='localhost';
+        $port=3306;
+        $charset='utf8';
+        $dbName='snows';
+        $userName='root';
+        $userPws='@Nicolas11';
+        $dsn = $sqlDrivers.':host='.$hostname.';dbname='.$dbName.';port='.$port.';charst='.$charset;
+
+        try {
+            $tempDBConnection = new PDO($dsn, $userName, $userPws);
+        }catch (PDOException $exception){
+            echo 'Connection failed'.$exception->getMessage();
+        }
+        return $tempDBConnection;
+    }
+
+    class ModelDataException{
+
     }

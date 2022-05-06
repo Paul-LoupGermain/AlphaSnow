@@ -78,14 +78,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a href="../index.php?action=shop">Shop</a></li>
                             <li><a href="../index.php?action=team">Team</a></li>
                             <li><a href="../index.php?action=experience">Experience</a></li>
-                            <?php if (isset($_SESSION['user_type'])) : ?>
+                            <?php if (isset($_SESSION['userType'])) : ?>
                                 <li>
-                                    <a href="../index.php?action=gestion">Gestion</a>
+                                    <a href="index.php?action=gestion">Gestion</a>
                                 </li>
-                            <?php endif; ?>
+                            <?php endif;?>
                             <li><a href="../index.php?action=contact">Contact</a></li>
                             <li>
-                                <?php if (isset($_SESSION['login_email'])) : ?>
+                                <?php if (isset($_SESSION['userEmailAddress'])) : ?>
                                     <a href="../index.php?action=logout">Logout</a>
                                 <?php else : ?>
                                 <a href="../index.php?action=login">Login</a>
@@ -95,8 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li>
                                 <div class="topbar-child2">
                                             <span class="topbar-email text-color">
-                                                <?php if (isset($_SESSION['login_email'])) : ?>
-                                                    <?= $_SESSION['login_email']; ?>
+                                                <?php if (isset($_SESSION['userEmailAddress'])) : ?>
+                                                    <?= $_SESSION['userEmailAddress']; ?>
                                                 <?php endif; ?>
                                             </span>
                                 </div>

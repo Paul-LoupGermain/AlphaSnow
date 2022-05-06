@@ -41,12 +41,12 @@ $title = "AlphaSnow - login";
                                 <fieldset class="input">
                                     <p id="login-form-username">
                                         <label for="input_email">Email</label>
-                                        <input id="input_email" type="text" name="login_email" class="inputbox"
+                                        <input id="input_email" type="text" name="input_email" class="inputbox"
                                                size="18" autocomplete="off">
                                     </p>
                                     <p id="login-form-password">
                                         <label for="input_password">Password</label>
-                                        <input id="input_password" type="password" name="login_password"
+                                        <input id="input_password" type="password" name="input_password"
                                                class="inputbox" size="18" autocomplete="off">
                                     </p>
                                     <div class="remember">

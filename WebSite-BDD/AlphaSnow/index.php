@@ -4,7 +4,7 @@
      * @file      index.php
      * @brief     This file is the rooter managing the link with controllers.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   31-MAR-2022
+     * @version   06-MAI-2022
      */
 
     require "controller/navigation.php";
