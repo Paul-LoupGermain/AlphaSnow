@@ -1,0 +1,12 @@
+[
+  {
+    "email":"admin@alphasnow.ch",
+    "password":"Pa$$w0rd",
+    "user_type":1
+  },
+  {
+    "email":"client@alphasnow.ch",
+    "password":"1234",
+    "user_type":0
+  }
+]

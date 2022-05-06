@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/content/img/snow/salomon-NO DRAMA/l41506300_fua4zvpq4lcc1hra-removebg-preview.png" beforeDir="false" />
-    </list>
+    <list default="true" id="ed85d38d-7e1f-4522-a3f3-a306b1d937cd" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,6 +128,7 @@
       <workItem from="1648812939107" duration="4579000" />
       <workItem from="1648821669885" duration="2773000" />
       <workItem from="1649418066725" duration="876000" />
+      <workItem from="1649772477357" duration="6000" />
     </task>
     <servers />
   </component>
