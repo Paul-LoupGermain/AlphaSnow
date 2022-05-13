@@ -1,15 +1,15 @@
 <?php
 
-/**
- * @file      login.php
- * @brief     This file is used to lodge or redirect to register.
- * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
- * @update    Update Paul-Loup GERMAIN
- * @version   10-FEB-2022
- */
+    /**
+     * @file      login.php
+     * @brief     This file is used to lodge or redirect to register.
+     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
+     * @update    Update Paul-Loup GERMAIN
+     * @version   13-MAI-2022
+     */
 
-ob_start();
-$title = "AlphaSnow - login";
+    ob_start();
+    $title = "AlphaSnow - login";
 ?>
     <section>
         <img src="content/images/home_title.jpg" class="img-responsive"  alt=""/>
@@ -69,5 +69,5 @@ $title = "AlphaSnow - login";
 
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";

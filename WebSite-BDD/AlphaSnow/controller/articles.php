@@ -4,9 +4,8 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   31-MAR-2022
+     * @version   13-MAI-2022
      */
-
 
     /**
      * @brief This function calls the model and saves the json data in an associative array.

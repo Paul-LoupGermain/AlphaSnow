@@ -13,9 +13,11 @@
 
     session_start();
 
-    if (isset($_GET['action'])) {
+    if (isset($_GET['action']))
+    {
         $action = $_GET['action'];
-        switch ($action) {
+        switch ($action)
+        {
             case 'home' :
                 home();
                 break;
@@ -61,6 +63,8 @@
             default :
                 lost();
         }
-    } else {
+    }
+    else
+    {
         home();
     }

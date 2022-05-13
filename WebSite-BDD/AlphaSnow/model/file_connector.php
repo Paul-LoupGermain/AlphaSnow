@@ -2,59 +2,66 @@
 
     /**
      * @file      file_connector.php
-     * @brief     This file is used to write the data to the json file
+     * @brief     This file is the connection the website and the data base
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update by Paul-Loup GERMAIN
-     * @version   30-MAR-2022
+     * @version   13-MAI-2022
      */
 
     /**
      * @param $query
      * @return null
      */
-    function executeQuerySelect($query) {
-        $queryResult = null;
+    function execute_query_select($query)
+    {
+        $query_result = null;
 
-        $dbConnection = openDBConnection();
-        if ($dbConnection != null) {
-            $statment = $dbConnection->prepare($query);
+        $db_donnection = open_db_connection();
+        if ($db_donnection != null)
+        {
+            $statment = $db_donnection->prepare($query);
             $statment->execute();
-            $queryResult = $statment->fetchall();
+            $query_result = $statment->fetchall();
         }
-        $dbConnection = null;
-        return $queryResult;
+        $db_donnection = null;
+        return $query_result;
     }
 
-    function executeQueryInsert($query)
+    /**
+     * @param $query
+     */
+    function execute_query_insert($query)
     {
-        $dbConnection = openDBConnection();
+        $db_donnection = open_db_connection();
 
-        if ($dbConnection !=null)
+        if ($db_donnection !=null)
         {
-            $statement=$dbConnection->prepare($query); //Query prepare
+            $statement=$db_donnection->prepare($query); //Query prepare
             $statement->execute(); // Execute query
         }
-        $dbConnection = null; //Close connection
+        $db_donnection = null; //Close connection
     }
 
-
-    function openDBConnection(){
-        $tempDBConnection = null;
-        $sqlDrivers='mysql';
-        $hostname='localhost';
+    /**
+     * @return PDO|null
+     */
+    function open_db_connection(){
+        $temp_db_connection = null;
+        $sql_drivers='mysql';
+        $host_name='localhost';
         $port=3306;
         $charset='utf8';
-        $dbName='snows';
-        $userName='root';
-        $userPws='@Nicolas11';
-        $dsn = $sqlDrivers.':host='.$hostname.';dbname='.$dbName.';port='.$port.';charst='.$charset;
+        $db_name='snows';
+        $user_name='root';
+        $user_pws='@Nicolas11';
+        $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;
 
         try {
-            $tempDBConnection = new PDO($dsn, $userName, $userPws);
+            $temp_db_connection = new PDO($dsn, $user_name, $user_pws);
         }catch (PDOException $exception){
             echo 'Connection failed'.$exception->getMessage();
         }
-        return $tempDBConnection;
+        return $temp_db_connection;
     }
 
     class ModelDataException{

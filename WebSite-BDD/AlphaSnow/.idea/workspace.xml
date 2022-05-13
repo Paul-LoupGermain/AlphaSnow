@@ -21,7 +21,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="03f1e169-3325-4e86-a79a-3e08200df69f" name="localhost" port="8081" />
@@ -130,6 +129,7 @@
       <workItem from="1649418066725" duration="876000" />
       <workItem from="1649772477357" duration="6000" />
       <workItem from="1651822152888" duration="4895000" />
+      <workItem from="1652426185505" duration="2000000" />
     </task>
     <servers />
   </component>

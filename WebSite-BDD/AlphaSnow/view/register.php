@@ -5,7 +5,7 @@
      * @brief     This file is used to register.
      * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
      * @update    Update Paul-Loup GERMAIN
-     * @version   10-FEB-2022
+     * @version   13-MAI-2022
      */
 
     ob_start();
@@ -17,6 +17,7 @@
         <div class="container">
             <form method="post" name="formRegister" action="../index.php?action=register">
                 <div class="register-top-grid">
+
                     <h3>PERSONAL INFORMATION</h3>
                     <div class="form-group">
                         <label for="firstName">First Name *</label>
@@ -41,6 +42,10 @@
                     <div class="form-group">
                         <label for="inputPassword">Password *</label>
                         <input type="password" class="form-control" id="inputPassword" name="register_password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password *</label>
+                        <input type="password" class="form-control" id="inputPassword" name="register_password_confirmation" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="clear"> </div>
