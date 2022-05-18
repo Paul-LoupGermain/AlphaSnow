@@ -4,25 +4,31 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   13-MAI-2022
+     * @version   18-MAI-2022
      */
 
     /**
      * @brief This function calls the model and saves the json data in an associative array.
      */
-    function display_articles(){
-        try {
+    function display_articles()
+    {
+        try
+        {
             require_once "model/articles_managment.php";
             $articles = get_articles();
         }
-        catch (ErrorException $ex){
+        catch (ModelDataBaseException $ex)
+        {
             $article_error_message = "Nous rencontrons temporairement un problème pour afficher nos produits.";
-        } finally {
+        }
+        finally
+        {
             require "view/shop.php";
         }
     }
 
-    /**
+
+/**
      * @brief This function calls the model and saves the json data in an associative array relative to the code.
      * @param $info
      */

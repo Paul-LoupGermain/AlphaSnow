@@ -4,17 +4,17 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   31-MAR-2022
+     * @version   18-MAI-2022
      */
 
     /**
      * @brief This function saves the data from the json file into a variable.
-     * @return array
      */
-    function get_articles(){
-        $file_content = file_get_contents('data/data_articles.json');
-        $obj = json_decode($file_content,true);
-        return $obj;
+    function get_articles()
+    {
+        $snows_query = 'SELECT code, marque, model, description, description_grande, price, photo FROM snows';
+        require_once "model/file_connector.php";
+        return execute_query_select($snows_query);
     }
 
     /**
