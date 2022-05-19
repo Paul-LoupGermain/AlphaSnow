@@ -5,10 +5,11 @@
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   13-MAI-2022
+     * @version   19-MAI-2022
      */
 
     /**
+     * @brief This function checks if the user has filled in the login form fields correctly.
      * @param $login_request
      */
     function login($login_request)
@@ -42,15 +43,17 @@
     }
 
     /**
-     *
+     * @brief This function is used to disconnect from the session.
      */
-    function logout(){
+    function logout()
+    {
         session_destroy(); //destroy the session
         header("location:/index.php"); //to redirect back to "index.php" after logging out
         exit();
     }
 
     /**
+     * @brief This function checks if the user has filled in the register form fields correctly.
      * @param $register
      */
     function register ($register)

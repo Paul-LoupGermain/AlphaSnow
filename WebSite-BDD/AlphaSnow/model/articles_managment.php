@@ -4,11 +4,12 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   18-MAI-2022
+     * @version   19-MAI-2022
      */
 
     /**
-     * @brief This function saves the data from the json file into a variable.
+     * @brief This function saves the data from the data base into a variable.
+     * @return null
      */
     function get_articles()
     {
@@ -19,124 +20,51 @@
 
     /**
      * @brief This function will look for the table corresponding to the product in relation to the code.
-     * @param $info
-     * @return array|null
+     * @param $code
+     * @return null
      */
-    function get_article_detail($info){
-        $obj = get_articles();
-
-        $article_detail = Null;
-        $marque = Null;
-        $model = Null;
-        $code = Null;
-        $price = Null;
-        $description = Null;
-        $description_grande = Null;
-        $photo1 = Null;
-
-        foreach ($obj as $item) {
-            if ($info['code'] == $item['code']){
-                $marque = $item['marque'];
-                $model = $item['model'];
-                $code = $item['code'];
-                $price = $item['price'];
-                $description = $item['description'];
-                $description_grande = $item['description_grande'];
-                $photo1 = $item['photo1'];
-
-                $article_detail = array(
-                    'marque' => $marque,
-                    'model' => $model,
-                    'code' => $code,
-                    'price' => $price,
-                    'description' => $description,
-                    'description_grande' => $description_grande,
-                    'photo1' => $photo1
-                );
-                break;
-            }
-        }
-        return $article_detail;
-    }
-
-
-    /**
-     * @brief This function will delete a product in relation to its code.
-     * @param $info_delete
-     */
-    function delete_article($info_delete){
-        $obj = get_articles();
-        $indexObj = null;
-
-        foreach ($obj as $index=>$item) {
-            if ($info_delete['code'] == $item['code']){
-                $indexObj = $index;
-
-                break;
-            }
-        }
-        unset($obj[$indexObj]);
-
-        $obj = json_encode($obj);
-        file_put_contents('data/data_articles.json', $obj);
-    }
-
-    require "file_connector.php";
-
-    /**
-     * @brief This function is used to make the link between "write_article_in_json" and "extract_article" to extract the data and write it.
-     * @param $add_article
-     */
-    function save_article($add_article){
-        $new_article_to_write = extract_article($add_article);
-        write_article_in_json($new_article_to_write);
-        require "view/home.php";
+    function get_article_details($code)
+    {
+        $snows_query = 'SELECT code, marque, model, description, description_grande, price, photo FROM snows WHERE code = "'.$code.'"';
+        require_once "model/file_connector.php";
+        return execute_query_select($snows_query);
     }
 
     /**
-     * @brief This function is used to extract the data.
-     * @param $add_article
-     * @return array
+     * @brief This function delete the article from the data base
+     * @param $code
+     * @return null
      */
-    function extract_article($add_article) {
-        $marque = $add_article['add_article-marque'];
-        $model = $add_article['add_article-model'];
-        $price = $add_article['add_article-price'];
-        $description = $add_article['add_article-description'];
-        $description_grande = $add_article['add_article-grande_description'];
-        $photo1 = $add_article['add_article-photo1'];
-        $code = rand();
-
-        $type = 0;
-        $new_article_temp = array($marque, $model, $code, $price, $description, $description_grande, $photo1, $type);
-        return $new_article_temp;
+    function article_delete($code)
+    {
+        $snows_query = 'DELETE FROM snows WHERE code = "'.$code.'"';
+        require_once "model/file_connector.php";
+        return execute_query_select($snows_query);
     }
 
-
     /**
-     * @brief This function is used to edit the data.
-     * @param $info_edit
-     * @param $array_of_edit_article_inputs
+     * @brief This function add the new article to the data base.
+     * @param $new_article
+     * @return bool
      */
-    function save_edit_article($info_edit, $array_of_edit_article_inputs){
-        $obj = get_articles();
-        $indexObj = null;
+    function save_article($new_article)
+    {
+        $str_separator = '\'';
+        $generate_code = rand(1000, 9999);
+        $var1 = "B";
+        $var2 = ''.$var1.$generate_code.'';
 
-        foreach ($obj as $index=>$item) {
-            if ($info_edit['code'] == $item['code']){
-                $indexObj = $index;
-                break;
-            }
+        $snows_query = 'INSERT INTO snows (code, marque, model, description, description_grande, price, photo) VALUES ('.$str_separator.$var2.$str_separator.', '.$str_separator.$new_article['add_article-marque'].$str_separator.', '.$str_separator.$new_article['add_article-model'].$str_separator.', '.$str_separator.$new_article['add_article-description'].$str_separator.', '.$str_separator.$new_article['add_article-grande_description'].$str_separator.', '.$str_separator.$new_article['add_article-price'].$str_separator.', '.$str_separator.'view/content/img/snow'.$new_article['add_article-photo'].$str_separator.');';
+
+        require_once 'model/file_connector.php';
+        $query_result = execute_query_insert($snows_query);
+
+        if (count($query_result) == 1)
+        {
+            return false;
         }
 
-        $obj[$indexObj]['marque'] = $array_of_edit_article_inputs['edit_article-marque'];
-        $obj[$indexObj]['model'] = $array_of_edit_article_inputs['edit_article-model'];
-        $obj[$indexObj]['price'] = $array_of_edit_article_inputs['edit_article-price'];
-        $obj[$indexObj]['description'] = $array_of_edit_article_inputs['edit_article-description'];
-        $obj[$indexObj]['grande_description'] = $array_of_edit_article_inputs['edit_article-grande_description'];
-        $obj[$indexObj]['photo1'] = $array_of_edit_article_inputs['edit_article-photo1'];
+        execute_query_insert($snows_query);
 
-        $obj = json_encode($obj);
-        file_put_contents('data/data_articles.json', $obj);
-        require "view/home.php";
+        return true;
     }

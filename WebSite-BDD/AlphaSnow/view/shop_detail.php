@@ -10,14 +10,15 @@
                 <?php if(isset($article_error_message)) : ?>
                     <h5><span style="color: #ff0000"><?=$article_error_message?></span></h5>
                 <?php endif; ?>
+                <?php foreach($article_details as $article) :?>
                 <div class="col-md-9 single_left">
                     <div class="single_image">
-                        <img class="img-responsive" src="<?=$detail['photo1']; ?>" />
+                        <img class="img-responsive" src="<?=$article['photo']; ?>" />
                     </div>
                     <!-- end product_slider -->
                     <div class="single_right">
-                        <h3><?=$detail['marque']; ?> <?=$detail['model']; ?> #<?=$detail['code']; ?></h3>
-                        <p class="m_10"><?=$detail['description']; ?></p>
+                        <h3><?=$article['marque']; ?> <?=$article['model']; ?> #<?=$article['code']; ?></h3>
+                        <p class="m_10"><?=$article['description']; ?></p>
                         <div class="btn_form">
                             <form>
                                 <input type="submit" value="buy now" title="">
@@ -46,7 +47,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="box-info-product">
-                        <p class="price2">CHF <?=$detail['price']; ?>.-</p>
+                        <p class="price2">CHF <?=$article['price']; ?>.-</p>
                         <ul class="prosuct-qty">
                             <span>Quantity:</span>
                             <select>
@@ -67,11 +68,12 @@
             <div class="desc">
                 <br>
                 <h4>Description</h4>
-                <p><?=$detail['description_grande']; ?></p>
+                <p><?=$article['description_grande']; ?></p>
             </div>
         </div>
     </div>
 </div>
+<?php endforeach; ?>
 <?php
 
     $content = ob_get_clean();

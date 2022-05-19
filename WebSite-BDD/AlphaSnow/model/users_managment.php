@@ -8,6 +8,11 @@
      * @version   13-MAI-2022
      */
 
+    /**
+     * @brief This function is used to check if the user has entered the correct login.
+     * @param $user_email_address
+     * @param $user_psw
+     */
     function is_login_correct($user_email_address, $user_psw)
     {
         $result = false;
@@ -30,6 +35,7 @@
     }
 
     /**
+     * @brief This function will look if the usertype is equal to 1 compared to the email.
      * @param $user_email_address
      * @return mixed
      */
@@ -45,6 +51,7 @@
     }
 
     /**
+     * @brief This function add the new user to the data base.
      * @param $input_user_email
      * @param $input_user_psw
      * @return bool
@@ -70,4 +77,3 @@
 
         return true;
     }
-

@@ -22,11 +22,11 @@ $title = "AlphaSnow - Gestion";
 
                 <div class="col-md-6">
                     <div class="login-page">
-                        <img src="<?=$article['photo1']?>" class="img_gestion">
+                        <img src="<?=$article['photo']?>" class="img_gestion">
                         <?=$article['marque']?> <?=$article['model']?> #<?=$article['code']?>
                         <div class="button1">
                             <a href="../index.php?action=edit_article&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Edit"></a>
-                            <a href="../index.php?action=gestion_delete&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Delete"></a>
+                            <a href="../index.php?action=delete_article&code=<?=$article['code']?>"><input type="submit" name="Submit" value="Delete"></a>
                         </div>
                         <div class="clear"></div>
                     </div>

@@ -48,7 +48,7 @@ $title = "AlphaSnow - add_article";
                                         </p>
                                         <p id="login-form-username">
                                             <label for="photo1">photo1</label>
-                                            <input type="text" class="form-control" id="photo1" name="add_article-photo1" aria-describedby="photo1Help" placeholder="view/content/img/snow/" required>
+                                            <input type="text" class="form-control" id="photo1" name="add_article-photo" aria-describedby="photo1Help" placeholder="view/content/img/snow/" required>
                                         </p>
 
                                         <input type="submit" value="Add">
