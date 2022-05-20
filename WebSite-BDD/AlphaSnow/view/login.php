@@ -35,7 +35,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="login-title">
-                        <h4 class="title">Registered Customers</h4>
+                        <h4 class="title">Registered Customers</h4> <?php if (isset($login_error_message)){
+                            echo $login_error_message;
+                        }?>
                         <div id="loginbox" class="loginbox">
                             <form action="../index.php?action=login" method="post" name="login" id="login-form">
                                 <fieldset class="input">

@@ -5,7 +5,7 @@
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   19-MAI-2022
+     * @version   20-MAI-2022
      */
 
     /**
@@ -14,30 +14,43 @@
      */
     function login($login_request)
     {
-        if ((isset($login_request['input_email'])) && (isset($login_request['input_password'])))
+        if (isset($login_error_message))
         {
-            $input_user_email = $login_request['input_email'];
-            $input_user_psw = $login_request['input_password'];
-
-            require_once "model/users_managment.php";
-            if (is_login_correct($input_user_email, $input_user_psw))
+            $login_error_message = "";
+        }
+        if (count($login_request) != 0)
+        {
+            if ((isset($login_request['input_email'])) && (isset($login_request['input_password'])))
             {
-                $_SESSION['user_email_address']=$input_user_email;
-                if (get_user_type($input_user_email) == 1)
+                if (($login_request['input_email'] == "") || ($login_request['input_password'] == ""))
                 {
-                    $_SESSION['user_type']=1;
+                    $login_error_message = "Erreur. Veuillez remplir une adresse email ou un mot de passe.";
+                    require "view/login.php";
+                }else
+                {
+                    $input_user_email = $login_request['input_email'];
+                    $input_user_psw = $login_request['input_password'];
+
+                    require_once "model/users_managment.php";
+                    if (is_login_correct($input_user_email, $input_user_psw))
+                    {
+                        $_SESSION['user_email_address'] = $input_user_email;
+                        if (get_user_type($input_user_email) == 1)
+                        {
+                            $_SESSION['user_type'] = 1;
+                        }
+                        require "view/home.php";
+                    }
+                    else
+                    {
+                        $login_error_message = "Erreur. Votre email ou votre mot de passe est incorrect.";
+                        require "view/login.php";
+                    }
                 }
-                require "view/home.php";
-            }
-            else
-            {
-                $login_error_message = "Erreur";
-                require "view/login.php";
             }
         }
         else
         {
-            $login_error_message = "Erreur";
             require "view/login.php";
         }
     }

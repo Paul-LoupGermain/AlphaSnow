@@ -48,9 +48,12 @@
                         <input type="password" class="form-control" id="inputPassword" name="register_password_confirmation" placeholder="Password" required>
                     </div>
                 </div>
+
                 <div class="clear"> </div>
                 <input type="submit" name="Submit" class="button" value="Register">
-
+                <?php if (isset($register_error_message)){
+                    echo $register_error_message;
+                }?>
             </form>
         </div>
     </div>

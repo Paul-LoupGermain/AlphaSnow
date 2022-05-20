@@ -48,7 +48,7 @@ $title = "AlphaSnow - Gestion";
                                         </p>
                                         <p id="login-form-username">
                                             <label for="photo1">photo1</label>
-                                            <input type="text" class="form-control" value="<?= $detail['photo1']; ?>" id="photo1" name="edit_article-photo1" aria-describedby="photo1Help" required>
+                                            <input type="text" class="form-control" value="<?= $detail['photo']; ?>" id="photo1" name="edit_article-photo" aria-describedby="photo1Help" required>
                                         </p>
 
                                         <input type="submit" value="Edit">

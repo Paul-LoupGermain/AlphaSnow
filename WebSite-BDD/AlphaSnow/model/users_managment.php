@@ -5,7 +5,7 @@
      * @brief     This file is used to retrieve data from the json file for controller if the login matches the data
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update Paul-Loup GERMAIN
-     * @version   13-MAI-2022
+     * @version   20-MAI-2022
      */
 
     /**

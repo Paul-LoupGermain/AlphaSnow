@@ -4,7 +4,7 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   19-MAI-2022
+     * @version   20-MAI-2022
      */
 
     /**
@@ -85,7 +85,7 @@
         }
         finally
         {
-            require "view/gestion.php";
+            require "view/home.php";
         }
     }
 
@@ -99,9 +99,38 @@
         {
             require_once "model/articles_managment.php";
             save_article($new_article);
+            require "view/home.php";
         }
         else
         {
             require "view/add_article.php";
+        }
+    }
+
+
+
+
+
+
+
+    /**
+     * @brief
+     * @param $code
+     * @param $edit_article
+     */
+    function edit_article($code, $edit_article)
+    {
+        try
+        {
+            require_once "model/articles_managment.php";
+            $save_edit_article = save_edit_article($code, $edit_article);
+        }
+        catch (ModelDataBaseException $ex)
+        {
+            $article_error_message = "Nous rencontrons temporairement un problème pour afficher nos produits.";
+        }
+        finally
+        {
+            require "view/home.php";
         }
     }

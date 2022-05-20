@@ -4,7 +4,7 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   19-MAI-2022
+     * @version   20-MAI-2022
      */
 
     /**
@@ -57,14 +57,25 @@
         $snows_query = 'INSERT INTO snows (code, marque, model, description, description_grande, price, photo) VALUES ('.$str_separator.$var2.$str_separator.', '.$str_separator.$new_article['add_article-marque'].$str_separator.', '.$str_separator.$new_article['add_article-model'].$str_separator.', '.$str_separator.$new_article['add_article-description'].$str_separator.', '.$str_separator.$new_article['add_article-grande_description'].$str_separator.', '.$str_separator.$new_article['add_article-price'].$str_separator.', '.$str_separator.'view/content/img/snow'.$new_article['add_article-photo'].$str_separator.');';
 
         require_once 'model/file_connector.php';
-        $query_result = execute_query_insert($snows_query);
-
-        if (count($query_result) == 1)
-        {
-            return false;
-        }
 
         execute_query_insert($snows_query);
 
         return true;
+    }
+
+
+
+
+
+
+    /**
+     * @param $code
+     * @param $edit_article
+     * @return null
+     */
+    function save_edit_article($code, $edit_article)
+    {
+        $snows_query = 'SELECT code, marque, model, description, description_grande, price, photo FROM snows WHERE code = "'.$code.'"';
+        require_once "model/file_connector.php";
+        return execute_query_select($snows_query);
     }
