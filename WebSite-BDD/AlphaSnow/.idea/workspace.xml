@@ -39,7 +39,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.WebServer">
@@ -138,6 +138,7 @@
       <workItem from="1653999395213" duration="2000" />
       <workItem from="1654149988923" duration="5116000" />
       <workItem from="1654235991161" duration="2373000" />
+      <workItem from="1654238560057" duration="6335000" />
     </task>
     <servers />
   </component>

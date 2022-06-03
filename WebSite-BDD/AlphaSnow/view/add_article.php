@@ -48,11 +48,17 @@ $title = "AlphaSnow - add_article";
                                         </p>
                                         <p id="login-form-username">
                                             <label for="photo1">Photo</label>
+
+                                        <p id="login-form-username">
+                                            <label for="photo1">photo</label>
+                                            <input type="text" class="form-control"  id="photo1" name="add_article-photo" aria-describedby="photo1Help" required>
+                                        </p>
+                                        <!--
                                             <div class="bo4 of-hidden size15 m-b-10">
-                                                <!--<input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="inputItemPhoto" id="photo" style="display:none;"/>
+                                                <input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="inputItemPhoto" id="photo" style="display:none;"/>
                                                 <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Ajouter photo</label>-->
-                                                <input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="inputItemPhoto" id="photo" required/>
-                                            </div>
+                                                <!--<input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="inputItemPhoto" id="photo" required/>
+                                            </div>-->
                                         </p>
 
                                         <input type="submit" value="Add">

@@ -64,6 +64,7 @@
      * @return PDO|null
      */
     function open_db_connection(){
+/*
         $temp_db_connection = null;
         $sql_drivers='mysql';
         $host_name='localhost';
@@ -72,6 +73,16 @@
         $db_name='snows';
         $user_name='root';
         $user_pws='@Nicolas11';
+        $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;*/
+
+        $temp_db_connection = null;
+        $sql_drivers='mysql';
+        $host_name='localhost';
+        $port=3306;
+        $charset='utf8';
+        $db_name='paulloup_snows';
+        $user_name='paulloup_snows';
+        $user_pws='55G4ihP5fXJ3yUe%';
         $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;
 
         try {
