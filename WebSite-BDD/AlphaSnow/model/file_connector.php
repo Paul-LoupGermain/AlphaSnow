@@ -5,7 +5,7 @@
      * @brief     This file is the connection the website and the data base
      * @author    Created by Paul-Loup GERMAIN
      * @update    Update by Paul-Loup GERMAIN
-     * @version   13-MAI-2022
+     * @version   02-JUIN-2022
      */
 
     /**
@@ -40,6 +40,24 @@
             $statement->execute(); // Execute query
         }
         $db_donnection = null; //Close connection
+    }
+
+    /**
+     * @param $query
+     * @return null
+     */
+    function execute_query_update($query)
+    {
+        $query_result = null;
+        $db_donnection = open_db_connection();
+
+        if($db_donnection != null)
+        {
+            $query_result = $db_donnection->exec($query);      //Get the results of the query for the user
+        }
+        $db_donnection = null; //Close the connection to the database
+
+        return $query_result;
     }
 
     /**

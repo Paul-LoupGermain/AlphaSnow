@@ -4,7 +4,7 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   20-MAI-2022
+     * @version   03-JUIN-2022
      */
 
     /**
@@ -107,30 +107,23 @@
         }
     }
 
-
-
-
-
-
-
     /**
-     * @brief
+     * @brief This function calls the model according to the code to edit a product.
      * @param $code
      * @param $edit_article
      */
     function edit_article($code, $edit_article)
     {
-        try
+        require "model/articles_managment.php";
+
+        if ((isset($edit_article['edit_article-marque'])) && (isset($edit_article['edit_article-model'])) && (isset($edit_article['edit_article-price'])) && (isset($edit_article['edit_article-description'])) && (isset($edit_article['edit_article-grande_description'])) && (isset($edit_article['edit_article-photo'])))
         {
-            require_once "model/articles_managment.php";
-            $save_edit_article = save_edit_article($code, $edit_article);
-        }
-        catch (ModelDataBaseException $ex)
-        {
-            $article_error_message = "Nous rencontrons temporairement un problème pour afficher nos produits.";
-        }
-        finally
-        {
+            save_edit_article($code, $edit_article);
             require "view/home.php";
+        }
+        else
+        {
+            $details = get_article_details($code);
+            require "view/edit_article.php";
         }
     }

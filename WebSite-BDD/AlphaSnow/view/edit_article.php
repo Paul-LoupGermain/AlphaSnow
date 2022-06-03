@@ -12,6 +12,7 @@ $title = "AlphaSnow - Gestion";
 <?php if (isset($article_error_message)) : ?>
     <h5><span style="color: #ff0000"><?= $article_error_message ?></span></h5>
 <?php endif; ?>
+<?php foreach($details as $detail) :?>
     <div class="text_align">
         <div class="main">
             <div class="shop_top">
@@ -19,7 +20,7 @@ $title = "AlphaSnow - Gestion";
                     <div class="col-md-6">
                     </div>
                     <div class="edit_article">
-                        <img class="imgarticle" width="400px" height="400px" src="<?= $detail['photo1']; ?>">
+                        <img class="imgarticle" width="400px" height="400px" src="<?= $detail['photo']; ?>">
                         <div class="login-title">
                             <br>
                             <h4 "class="title">Article Edit</h4>
@@ -58,6 +59,7 @@ $title = "AlphaSnow - Gestion";
                         </div>
                         <div class="clear"></div>
                     </div>
+<?php endforeach; ?>
                 </div>
             </div>
         </div>

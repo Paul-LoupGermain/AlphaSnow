@@ -4,7 +4,7 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   20-MAI-2022
+     * @version   03-JUIN-2022
      */
 
     /**
@@ -63,19 +63,27 @@
         return true;
     }
 
-
-
-
-
-
     /**
+     * @brief This function is used to edit the data.
      * @param $code
      * @param $edit_article
-     * @return null
      */
     function save_edit_article($code, $edit_article)
     {
-        $snows_query = 'SELECT code, marque, model, description, description_grande, price, photo FROM snows WHERE code = "'.$code.'"';
-        require_once "model/file_connector.php";
-        return execute_query_select($snows_query);
+        $strSeparator = '\'';
+
+        $marque = $edit_article['edit_article-marque'];
+        $model = $edit_article['edit_article-model'];
+        $price = $edit_article['edit_article-price'];
+        $description = $edit_article['edit_article-description'];
+        $description_grande = $edit_article['edit_article-grande_description'];
+        $photo = $edit_article['edit_article-photo'];
+
+        $columnsToModify = "marque = ".$strSeparator.$marque.$strSeparator.", model = ".$strSeparator.$model.$strSeparator.", price = ".$price.", description = ".$strSeparator.$description.$strSeparator.", description_grande = ".$strSeparator.$description_grande.$strSeparator.", photo = ".$strSeparator.$photo.$strSeparator;
+        $query = 'UPDATE snows SET '.$columnsToModify.' WHERE code = '.$strSeparator.$code.$strSeparator;
+
+        require_once 'model/file_connector.php';
+        $query_result = execute_query_update($query);
+
+        return $query_result;
     }
