@@ -3,9 +3,8 @@
     /**
      * @file      register.php
      * @brief     This file is used to register.
-     * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
-     * @update    Update Paul-Loup GERMAIN
-     * @version   13-MAI-2022
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
      */
 
     ob_start();

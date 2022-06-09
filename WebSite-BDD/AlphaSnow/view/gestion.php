@@ -1,15 +1,14 @@
 <?php
 
+    /**
+     * @file      gestion.php
+     * @brief     This view is designed to edit product
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
 
-/**
- * @file      gestion.php
- * @brief     This view is designed to edit product
- * @author    Mathias Bourqui
- * @version   28-MAR-2022
- */
-
-ob_start();
-$title = "AlphaSnow - Gestion";
+    ob_start();
+    $title = "AlphaSnow - Gestion";
 ?>
     <div class="main">
         <div class="shop_top">

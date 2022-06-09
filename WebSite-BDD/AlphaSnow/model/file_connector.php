@@ -4,8 +4,7 @@
      * @file      file_connector.php
      * @brief     This file is the connection the website and the data base
      * @author    Created by Paul-Loup GERMAIN
-     * @update    Update by Paul-Loup GERMAIN
-     * @version   02-JUIN-2022
+     * @version   09-JUIN-2022
      */
 
     /**
@@ -73,8 +72,8 @@
         $db_name='snows';
         $user_name='root';
         $user_pws='@Nicolas11';
-        $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;*/
-
+        $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;
+*/
         $temp_db_connection = null;
         $sql_drivers='mysql';
         $host_name='localhost';
@@ -85,9 +84,12 @@
         $user_pws='55G4ihP5fXJ3yUe%';
         $dsn = $sql_drivers.':host='.$host_name.';dbname='.$db_name.';port='.$port.';charst='.$charset;
 
-        try {
+        try
+        {
             $temp_db_connection = new PDO($dsn, $user_name, $user_pws);
-        }catch (PDOException $exception){
+        }
+        catch (PDOException $exception)
+        {
             echo 'Connection failed'.$exception->getMessage();
         }
         return $temp_db_connection;

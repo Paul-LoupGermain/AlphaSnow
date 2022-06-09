@@ -1,14 +1,16 @@
 <?php
-/**
- * @file      add_article.php
- * @brief     This view is designed to add product
- * @author    Mathias Bourqui
- * @version   30-MAR-2022
- */
 
-ob_start();
-$title = "AlphaSnow - add_article";
+    /**
+     * @file      add_article.php
+     * @brief     This view is designed to add product
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow - New article";
 ?>
+
 <?php if (isset($article_error_message)) : ?>
     <h5><span style="color: #ff0000"><?= $article_error_message ?></span></h5>
 <?php endif; ?>
@@ -35,7 +37,9 @@ $title = "AlphaSnow - add_article";
                                             <input type="text" class="form-control" id="model" name="add_article-model" aria-describedby="modelHelp" placeholder="Model" required>
                                         </p>
                                         <p id="login-form-username">
-                                            <label for="price">Price</label>
+                                            <label for="price">Price</label><?php if (isset($error_message)){
+                                                echo $error_message;
+                                            }?>
                                             <input type="text" class="form-control" id="price" name="add_article-price" aria-describedby="priceHelp" placeholder="Price" required>
                                         </p>
                                         <p id="login-form-username">
@@ -46,11 +50,9 @@ $title = "AlphaSnow - add_article";
                                             <label for="grande_description">Grande Description</label>
                                             <input type="text" class="form-control" id="grande_description" name="add_article-grande_description" aria-describedby="grande_descriptionHelp" placeholder="Description" required>
                                         </p>
-                                        <p id="login-form-username">
-                                            <label for="photo1">Photo</label>
 
                                         <p id="login-form-username">
-                                            <label for="photo1">photo</label>
+                                            <label for="photo1">Photo</label>
                                             <input type="text" class="form-control"  id="photo1" name="add_article-photo" aria-describedby="photo1Help" required>
                                         </p>
                                         <!--
@@ -74,5 +76,6 @@ $title = "AlphaSnow - add_article";
     </div>
 
 <?php
-$content = ob_get_clean();
-require "gabarit.php";
+
+    $content = ob_get_clean();
+    require "gabarit.php";

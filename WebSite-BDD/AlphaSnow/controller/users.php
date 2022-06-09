@@ -4,8 +4,7 @@
      * @file      users.php
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
-     * @update    Update Paul-Loup GERMAIN
-     * @version   20-MAI-2022
+     * @version   03-JUIN-2022
      */
 
     /**
@@ -24,9 +23,10 @@
             {
                 if (($login_request['input_email'] == "") || ($login_request['input_password'] == ""))
                 {
-                    $login_error_message = "Erreur. Veuillez remplir une adresse email ou un mot de passe.";
+                    $login_error_message = "/!\ Erreur /!\ Veuillez remplir une adresse email ou un mot de passe.";
                     require "view/login.php";
-                }else
+                }
+                else
                 {
                     $input_user_email = $login_request['input_email'];
                     $input_user_psw = $login_request['input_password'];
@@ -43,7 +43,7 @@
                     }
                     else
                     {
-                        $login_error_message = "Erreur. Votre email ou votre mot de passe est incorrect.";
+                        $login_error_message = "/!\ Erreur /!\ Votre email ou votre mot de passe est incorrect.";
                         require "view/login.php";
                     }
                 }
@@ -76,7 +76,7 @@
         {
             if ($register ['register_email'] == '' || $register['register_password'] == '' || $register['register_password_confirmation'] == '')
             {
-                $register_error_message="Le mail et/ou le password ne sont pas rempli(s).";
+                $register_error_message="/!\ Erreur /!\ Le mail et/ou le password ne sont pas rempli(s).";
                 require "view/register.php";
             }
             else
@@ -95,13 +95,13 @@
                     }
                     else
                     {
-                        $register_error_message="Le mail et le Password ne correspondent pas.";
+                        $register_error_message="/!\ Erreur /!\Le mail et le Password ne correspondent pas.";
                         require "view/register.php";
                     }
                 }
                 else
                 {
-                    $register_error_message="Les mots de passe ne correspondent pas";
+                    $register_error_message="/!\ Erreur /!\Les mots de passe ne correspondent pas";
                     require "view/register.php";
                 }
             }

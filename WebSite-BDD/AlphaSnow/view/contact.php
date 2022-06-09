@@ -1,8 +1,16 @@
 <?php
 
-ob_start();
-$title = "AlphaSnow . Contact";
+    /**
+     * @file      contact.php
+     * @brief     This view is designed to print the contact
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow - Contact";
 ?>
+
 <div class="main">
     <div class="shop_top">
         <div class="container">
@@ -59,5 +67,5 @@ $title = "AlphaSnow . Contact";
 </div>
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";

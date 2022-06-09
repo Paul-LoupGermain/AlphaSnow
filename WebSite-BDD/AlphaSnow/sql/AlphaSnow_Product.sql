@@ -39,8 +39,8 @@ INSERT INTO `snows` (`id`, `code`, `marque`, `model`, `description`, `descriptio
 	(2, 'A3622', 'Salomon', 'GYPSY', 'Pour une glisse sans fin', 'Description_grande', 599.00, 'view/content/img/snow/salomon-GYPSY/Salomon-GYPSY(1).png'),
 	(3, 'A3010', 'Head', 'DAY LYT', 'Pour une glisse de compétition', 'Description_grande', 799.00, 'view/content/img/snow/head-DAY LYT/day-lyt.png'),
 	(4, 'A9852', 'Salomon', 'NO DRAMA', 'Pour une glisse plaine de sensation', 'Description_grande', 399.00, 'view/content/img/snow/salomon-NO DRAMA/no_drama.png');
-
 -- Listage de la structure de la table snows. users
+
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `userEmailAddress` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -55,7 +55,7 @@ DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `userEmailAddress`, `userHashPsw`, `userType`) VALUES
 	(12, 'admin@alphasnow.ch', '$2y$10$fbwm5whNrdFUu43gTlktMeh9xvX76UwzULrJroysDT9PcjInPJ/y6', 1),
-	(13, 'clien@alphasnow.ch', '$2y$10$acfJsRajk3e7yOWj33HhqO0/rjbeR7NqMLmOAW096iRUfqTSglQXS', 0);
+	(13, 'client@alphasnow.ch', '$2y$10$acfJsRajk3e7yOWj33HhqO0/rjbeR7NqMLmOAW096iRUfqTSglQXS', 0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

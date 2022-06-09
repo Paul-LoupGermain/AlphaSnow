@@ -1,7 +1,7 @@
 <?php
 
-ob_start();
-$title = "AlphaSnow . Experiance";
+    ob_start();
+    $title = "AlphaSnow - Experiance";
 ?>
     <div class="main">
         <div class="shop_top">

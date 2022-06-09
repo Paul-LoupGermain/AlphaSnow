@@ -1,14 +1,16 @@
 <?php
-/**
- * @file      edit_article.php
- * @brief     This view is designed to edit product
- * @author    Mathias Bourqui
- * @version   30-MAR-2022
- */
 
-ob_start();
-$title = "AlphaSnow - Gestion";
+    /**
+     * @file      edit_article.php
+     * @brief     This view is designed to edit product
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow - Edit article";
 ?>
+
 <?php if (isset($article_error_message)) : ?>
     <h5><span style="color: #ff0000"><?= $article_error_message ?></span></h5>
 <?php endif; ?>
@@ -36,7 +38,9 @@ $title = "AlphaSnow - Gestion";
                                             <input type="text" class="form-control" value="<?= $detail['model']; ?>" id="model" name="edit_article-model" aria-describedby="modelHelp" required>
                                         </p>
                                         <p id="login-form-username">
-                                            <label for="price">Price</label>
+                                            <label for="price">Price</label><?php if (isset($error_message)){
+                                                echo $error_message;
+                                            }?>
                                             <input type="text" class="form-control" value="<?= $detail['price']; ?>" id="price" name="edit_article-price" aria-describedby="priceHelp" required>
                                         </p>
                                         <p id="login-form-username">
@@ -48,7 +52,7 @@ $title = "AlphaSnow - Gestion";
                                             <input type="text" class="form-control" value="<?= $detail['description_grande']; ?>" id="grande_description" name="edit_article-grande_description" aria-describedby="grande_descriptionHelp" required>
                                         </p>
                                         <p id="login-form-username">
-                                            <label for="photo1">photo1</label>
+                                            <label for="photo1">photo</label>
                                             <input type="text" class="form-control" value="<?= $detail['photo']; ?>" id="photo1" name="edit_article-photo" aria-describedby="photo1Help" required>
                                         </p>
 
@@ -66,5 +70,6 @@ $title = "AlphaSnow - Gestion";
     </div>
 
 <?php
-$content = ob_get_clean();
-require "gabarit.php";
+
+    $content = ob_get_clean();
+    require "gabarit.php";

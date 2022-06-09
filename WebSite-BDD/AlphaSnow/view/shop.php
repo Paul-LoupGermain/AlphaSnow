@@ -1,5 +1,12 @@
 <?php
 
+    /**
+     * @file      register.php
+     * @brief     This file is used to print the shop.
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
+
     ob_start();
     $title = "AlphaSnow - Shop";
 ?>

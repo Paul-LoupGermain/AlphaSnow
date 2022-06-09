@@ -4,7 +4,7 @@
      * @file      navigation.php
      * @brief     This file links index.php to home.php, lost.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   10-FEB-2022
+     * @version   03-JUIN-2022
      */
 
     /**

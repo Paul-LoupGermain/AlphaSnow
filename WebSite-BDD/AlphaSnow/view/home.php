@@ -1,14 +1,14 @@
 <?php
 
-/**
- * @file      home.php
- * @brief
- * @author    Created by Mathias BOURQUI / Arlindo TAVARES-VARELA
- * @version   10-FEB-2022
- */
+    /**
+     * @file      home.php
+     * @brief
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
 
-ob_start();
-$title = "AlphaSnow - Home";
+    ob_start();
+    $title = "AlphaSnow - Home";
 ?>
 
     <div class="banner">

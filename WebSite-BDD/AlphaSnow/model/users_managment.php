@@ -4,7 +4,6 @@
      * @file      users_managment.php
      * @brief     This file is used to retrieve data from the json file for controller if the login matches the data
      * @author    Created by Paul-Loup GERMAIN
-     * @update    Update Paul-Loup GERMAIN
      * @version   20-MAI-2022
      */
 
@@ -39,8 +38,8 @@
      * @param $user_email_address
      * @return mixed
      */
-    function get_user_type($user_email_address){
-
+    function get_user_type($user_email_address)
+    {
         $str_separator = '\'';
         $user_type_query = 'SELECT userType FROM users  WHERE userEmailAddress='.$str_separator.$user_email_address.$str_separator;
 

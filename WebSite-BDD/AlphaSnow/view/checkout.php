@@ -1,9 +1,16 @@
-
 <?php
 
-ob_start();
-$title = "AlphaSnow . Checkout";
+    /**
+     * @file      checkout.php
+     * @brief     This view is designed to check product
+     * @author    Created by Paul-Loup GERMAIN
+     * @version   09-JUIN-2022
+     */
+
+    ob_start();
+    $title = "AlphaSnow - Checkout";
 ?>
+
 <div class="main">
     <div class="shop_top">
         <div class="container">
@@ -14,5 +21,5 @@ $title = "AlphaSnow . Checkout";
 </div>
 <?php
 
-$content = ob_get_clean();
-require "gabarit.php";
+    $content = ob_get_clean();
+    require "gabarit.php";
