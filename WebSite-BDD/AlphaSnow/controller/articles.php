@@ -110,18 +110,33 @@
                     $articleErrorMessage = "Nous rencontrons temporairement un problème technique pour afficher nos produits. Désolé du dérangement !";
                 }
 
-                require_once "model/articles_managment.php";
-                save_article($new_article, $filename);
+                if ($_FILES['add_article-photo']['size'] < 1000000)
+                {
+                    if (is_uploaded_file($_FILES['add_article-photo']['tmp_name']))
+                    {
+                        $mimeType = finfo_file(finfo_open(FILEINFO_MIME_TYPE), $_FILES['add_article-photo']['tmp_name']);
 
-                if (move_uploaded_file($tempname, $folder))
-                {
-                    $msg = "Image uploaded successfully";
+                        $allowed_file_types = ['image/png', 'image/jpeg'];
+                        if (!in_array($mimeType, $allowed_file_types))
+                        {
+                            $articleErrorMessage = '/!\ Erreur /!\ Format fichier incorrect : que png ou jpeg !';
+                        }
+                        else
+                        {
+                            if (move_uploaded_file($tempname, $folder))
+                            {
+                                require_once "model/articles_managment.php";
+                                save_article($new_article, $filename);
+                                require "view/home.php";
+                            }
+                            else
+                            {
+                                $msg = "Failed to upload image";
+                            }
+                        }
+                        require "view/add_article.php";
+                    }
                 }
-                else
-                {
-                    $msg = "Failed to upload image";
-                }
-                require "view/home.php";
             }
             else
             {
@@ -159,17 +174,35 @@
                     $articleErrorMessage = "Nous rencontrons temporairement un problème technique pour afficher nos produits. Désolé du dérangement !";
                 }
 
-                save_edit_article($code, $edit_article, $filename);
+                if ($_FILES['edit_article-photo']['size'] < 1000000)
+                {
+                    if (is_uploaded_file($_FILES['edit_article-photo']['tmp_name']))
+                    {
+                        $mimeType = finfo_file(finfo_open(FILEINFO_MIME_TYPE), $_FILES['edit_article-photo']['tmp_name']);
 
-                if (move_uploaded_file($tempname, $folder))
-                {
-                    $msg = "Image uploaded successfully";
+                        $allowed_file_types = ['image/png', 'image/jpeg'];
+                        if (!in_array($mimeType, $allowed_file_types))
+                        {
+                            $articleErrorMessage = '/!\ Erreur /!\ Format fichier incorrect : que png ou jpeg !';
+                        }
+                        else
+                        {
+                            if (move_uploaded_file($tempname, $folder))
+                            {
+                                require_once "model/articles_managment.php";
+                                save_edit_article($code, $edit_article, $filename);
+                                require "view/home.php";
+                            }
+                            else
+                            {
+                                $msg = "Failed to upload image";
+                            }
+                        }
+                        $details = get_article_details($code);
+                        require "view/edit_article.php";
+                    }
                 }
-                else
-                {
-                    $msg = "Failed to upload image";
-                }
-                require "view/home.php";
+
             }
             else
             {

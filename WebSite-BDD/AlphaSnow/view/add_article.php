@@ -11,9 +11,6 @@
     $title = "AlphaSnow - New article";
 ?>
 
-<?php if (isset($article_error_message)) : ?>
-    <h5><span style="color: #ff0000"><?= $article_error_message ?></span></h5>
-<?php endif; ?>
     <div class="text_align">
         <div class="main">
             <div class="shop_top">
@@ -56,7 +53,9 @@
                                             <input type="text" class="form-control"  id="photo1" name="add_article-photo" aria-describedby="photo1Help" required>
                                         </p>-->
 
-                                            <div class="bo4 of-hidden size15 m-b-10">
+                                            <div class="bo4 of-hidden size15 m-b-10"><?php if (isset($articleErrorMessage)){
+                                                    echo $articleErrorMessage;
+                                                }?>
                                                 <!--<input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="add_article-photo" id="photo" style="display:none;"/>-->
                                                 <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Ajouter photo</label>
                                                 <input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="add_article-photo" id="photo" required/>
