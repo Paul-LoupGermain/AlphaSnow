@@ -202,7 +202,6 @@
                         require "view/edit_article.php";
                     }
                 }
-
             }
             else
             {
