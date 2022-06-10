@@ -26,7 +26,7 @@
                             <br>
                             <h4 class="title">Add Article</h4>
                             <div id="loginbox" class="loginbox">
-                                <form action="../index.php?action=add_article" method="post" name="add" id="login-form">
+                                <form action="../index.php?action=add_article" method="post" name="add" id="login-form" enctype="multipart/form-data">
                                     <fieldset class="input">
                                         <p id="login-form-username">
                                             <label for="marque">Marque</label>
@@ -51,16 +51,16 @@
                                             <input type="text" class="form-control" id="grande_description" name="add_article-grande_description" aria-describedby="grande_descriptionHelp" placeholder="Description" required>
                                         </p>
 
-                                        <p id="login-form-username">
+                                        <!--<p id="login-form-username">
                                             <label for="photo1">Photo</label>
                                             <input type="text" class="form-control"  id="photo1" name="add_article-photo" aria-describedby="photo1Help" required>
-                                        </p>
-                                        <!--
+                                        </p>-->
+
                                             <div class="bo4 of-hidden size15 m-b-10">
-                                                <input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="inputItemPhoto" id="photo" style="display:none;"/>
-                                                <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Ajouter photo</label>-->
-                                                <!--<input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="inputItemPhoto" id="photo" required/>
-                                            </div>-->
+                                                <!--<input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="add_article-photo" id="photo" style="display:none;"/>-->
+                                                <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Ajouter photo</label>
+                                                <input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="add_article-photo" id="photo" required/>
+                                            </div>
                                         </p>
 
                                         <input type="submit" value="Add">
