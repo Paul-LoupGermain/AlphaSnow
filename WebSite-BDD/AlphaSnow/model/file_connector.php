@@ -62,7 +62,8 @@
     /**
      * @return PDO|null
      */
-    function open_db_connection(){
+    function open_db_connection()
+    {
 /*
         $temp_db_connection = null;
         $sql_drivers='mysql';

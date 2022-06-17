@@ -4,7 +4,7 @@
      * @file      index.php
      * @brief     This file is the rooter managing the link with controllers.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   03-JUIN-2022
+     * @version   17-JUIN-2022
      */
 
     require "controller/navigation.php";
@@ -42,9 +42,6 @@
             case 'contact' :
                 contact();
                 break;
-            case 'checkout' :
-                checkout();
-                break;
             case 'single' :
                 $code = $_GET['code'];
                 display_article_detail($code);
@@ -62,6 +59,18 @@
                 break;
             case 'add_article' :
                 add_article($_POST);
+                break;
+            case 'checkout' :
+                checkout();
+                break;
+            case 'cart' :
+                cart_display();
+                break;
+            case 'cart_update' :
+                cart_update_item($_POST);
+                break;
+            case 'cart_add' :
+                cart_add_item($_POST);
                 break;
             default :
                 lost();

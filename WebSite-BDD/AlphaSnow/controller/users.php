@@ -4,7 +4,7 @@
      * @file      users.php
      * @brief     This file is used to redirect the user to the login or register page
      * @author    Created by Paul-Loup GERMAIN
-     * @version   03-JUIN-2022
+     * @version   17-JUIN-2022
      */
 
     /**
@@ -67,6 +67,7 @@
 
     /**
      * @brief This function checks if the user has filled in the register form fields correctly.
+     * @brief And add the new user data to the database.
      * @param $register
      */
     function register ($register)

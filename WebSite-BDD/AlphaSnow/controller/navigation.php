@@ -41,10 +41,3 @@
     function contact(){
         require "view/contact.php";
     }
-
-    /**
-     * @brief This function is designed to redirect the user to the checkout page
-     */
-    function checkout(){
-        require "view/checkout.php";
-    }

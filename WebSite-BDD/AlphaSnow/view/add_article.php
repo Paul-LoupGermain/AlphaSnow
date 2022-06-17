@@ -44,7 +44,7 @@
                                             <input type="text" class="form-control" id="description" name="add_article-description" aria-describedby="descriptionHelp" placeholder="Description" required>
                                         </p>
                                         <p id="login-form-username">
-                                            <label for="grande_description">Grande Description</label>
+                                            <label for="grande_description">Full Description</label>
                                             <input type="text" class="form-control" id="grande_description" name="add_article-grande_description" aria-describedby="grande_descriptionHelp" placeholder="Description" required>
                                         </p>
 
@@ -57,7 +57,7 @@
                                                     echo $articleErrorMessage;
                                                 }?>
                                                 <!--<input class="sizefull s-text7 p-l-22 p-r-22" type="file" name="add_article-photo" id="photo" style="display:none;"/>-->
-                                                <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Ajouter photo</label>
+                                                <label class="s-text7 p-l-22 p-r-22" for="photo" style="padding-left:20px;padding-top:12px;">Add photo</label>
                                                 <input class="sizefull s-text7 p-l-22 p-r-22" style="padding-top:12px;padding-left:20px" type="file" name="add_article-photo" id="photo" required/>
                                             </div>
                                         </p>

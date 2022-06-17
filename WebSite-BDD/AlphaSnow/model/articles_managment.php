@@ -4,11 +4,11 @@
      * @file      articles_managment.php
      * @brief     This file check and display the articles.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   10-JUIN-2022
+     * @version   17-JUIN-2022
      */
 
     /**
-     * @brief This function saves the data from the data base into a variable.
+     * @brief This function makes a request to select the products in the database.
      * @return null
      */
     function get_articles()
@@ -19,7 +19,7 @@
     }
 
     /**
-     * @brief This function will look for the table corresponding to the product in relation to the code.
+     * @brief This function makes a request to select the product details against the code in the database.
      * @param $code
      * @return null
      */
@@ -31,7 +31,7 @@
     }
 
     /**
-     * @brief This function delete the article from the data base
+     * @brief This function makes a request to delete the products in the database.
      * @param $code
      * @return null
      */
@@ -43,7 +43,7 @@
     }
 
     /**
-     * @brief This function add the new article to the data base.
+     * @brief This function generates a unique code and retrieves the data from the form and makes a request to add the new product to the database.
      * @param $new_article
      * @param $filename
      * @return bool
@@ -55,7 +55,7 @@
         $var1 = "B";
         $var2 = ''.$var1.$generate_code.'';
 
-        $snows_query = 'INSERT INTO snows (code, marque, model, description, description_grande, price, photo) VALUES ('.$str_separator.$var2.$str_separator.', '.$str_separator.$new_article['add_article-marque'].$str_separator.', '.$str_separator.$new_article['add_article-model'].$str_separator.', '.$str_separator.$new_article['add_article-description'].$str_separator.', '.$str_separator.$new_article['add_article-grande_description'].$str_separator.', '.$str_separator.$new_article['add_article-price'].$str_separator.', '.$str_separator.'view/content/img/snow'.$filename.$str_separator.');';
+        $snows_query = 'INSERT INTO snows (code, marque, model, description, description_grande, price, photo) VALUES ('.$str_separator.$var2.$str_separator.', '.$str_separator.addslashes($new_article['add_article-marque']).$str_separator.', '.$str_separator.addslashes($new_article['add_article-model']).$str_separator.', '.$str_separator.addslashes($new_article['add_article-description']).$str_separator.', '.$str_separator.addslashes($new_article['add_article-grande_description']).$str_separator.', '.$str_separator.$new_article['add_article-price'].$str_separator.', '.$str_separator.'view/content/img/snow'.$filename.$str_separator.');';
 
         require_once 'model/file_connector.php';
 
@@ -65,9 +65,11 @@
     }
 
     /**
-     * @brief This function is used to edit the data.
+     * @brief This function retrieves data from the form and makes a request to modify the product in the database.
      * @param $code
      * @param $edit_article
+     * @param $filename
+     * @return null
      */
     function save_edit_article($code, $edit_article, $filename)
     {
@@ -79,7 +81,7 @@
         $description = $edit_article['edit_article-description'];
         $description_grande = $edit_article['edit_article-grande_description'];
 
-        $columnsToModify = "marque = ".$strSeparator.$marque.$strSeparator.", model = ".$strSeparator.$model.$strSeparator.", price = ".$price.", description = ".$strSeparator.$description.$strSeparator.", description_grande = ".$strSeparator.$description_grande.$strSeparator.", photo = ".$strSeparator.'view/content/img/snow'.$filename.$strSeparator;
+        $columnsToModify = "marque = ".$strSeparator.addslashes($marque).$strSeparator.", model = ".$strSeparator.addslashes($model).$strSeparator.", price = ".$price.", description = ".$strSeparator.addslashes($description).$strSeparator.", description_grande = ".$strSeparator.addslashes($description_grande).$strSeparator.", photo = ".$strSeparator.'view/content/img/snow'.$filename.$strSeparator;
         $query = 'UPDATE snows SET '.$columnsToModify.' WHERE code = '.$strSeparator.$code.$strSeparator;
 
         require_once 'model/file_connector.php';

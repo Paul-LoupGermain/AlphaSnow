@@ -4,11 +4,11 @@
      * @file      articles.php
      * @brief     This file links index.php to articles_managment.php.
      * @author    Created by Paul-Loup GERMAIN
-     * @version   10-JUIN-2022
+     * @version   17-JUIN-2022
      */
 
     /**
-     * @brief This function calls the model and saves the json data in an associative array.
+     * @brief This function calls the model to list the products from the database and redirects to "shop.php".
      */
     function display_articles()
     {
@@ -28,7 +28,7 @@
     }
 
     /**
-     * @brief This function calls the model and saves the json data in an associative array relative to the code.
+     * @brief This function calls the model to list the product details against the code from the database and redirects to "shop_detail.php".
      * @param $code
      */
     function display_article_detail($code)
@@ -49,7 +49,7 @@
     }
 
     /**
-     * @brief This function calls the model and saves the json data in an associative array.
+     * @brief This function calls the model to list the products in the "management" page from the database and redirects to "gestion.php".
      */
     function gestion()
     {
@@ -69,7 +69,7 @@
     }
 
     /**
-     * @brief This function calls the model according to the code to delete a product.
+     * @brief This function calls the model to delete a product in the database and redirects to "home.php".
      * @param $code
      */
     function delete_article($code)
@@ -90,7 +90,9 @@
     }
 
     /**
-     * @brief This function checks if the user has filled in the register form fields correctly.
+     * @brief This function is used to add an article by making the link with the model.
+     * @brief It is checked if the fields of the forms are filled and if the correct characters are entered.
+     * @brief It saves the image chosen by the user in the global variable $_FILE and checks if it is a "png" or "jpg" format.
      * @param $new_article
      */
     function add_article($new_article)
@@ -151,7 +153,10 @@
     }
 
     /**
-     * @brief This function calls the model according to the code to edit a product.
+     * @brief This function is used to edit an article by making the link with the model.
+     * @brief Basically, the fields are pre-filled using the "display_article_detail" function.
+     * @brief It is checked if the fields of the forms are filled and if the correct characters are entered.
+     * @brief It saves the image chosen by the user in the global variable $_FILE and checks if it is a "png" or "jpg" format.
      * @param $code
      * @param $edit_article
      */

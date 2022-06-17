@@ -50,7 +50,7 @@
     }
 
     /**
-     * @brief This function add the new user to the data base.
+     * @brief This function add the new user to the database.
      * @param $input_user_email
      * @param $input_user_psw
      * @return bool
